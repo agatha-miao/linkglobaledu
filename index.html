@@ -20,7 +20,7 @@
     </head>
     <body id="page-top">
         <!-- Navigation-->
-        <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
+<nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
     <div class="container px-4 px-lg-5">
         <a class="navbar-brand" href="#page-top">Start Bootstrap</a>
         <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
@@ -33,17 +33,12 @@
                 <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
                 <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
                 <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+
+                <!-- 语言选择，样式和 nav-link 一致 -->
+                <li class="nav-item ms-2"><a class="nav-link" href="#" onclick="setLang('zh')">中文</a></li>
+                <li class="nav-item"><a class="nav-link" href="#" onclick="setLang('en')">English</a></li>
+                <li class="nav-item"><a class="nav-link" href="#" onclick="setLang('ja')">日本語</a></li>
             </ul>
-
-            <!-- 语言下拉选择框 -->
-            <div class="ms-lg-3" style="margin-left: 15px;">
-                <select class="form-select form-select-sm" onchange="setLang(this.value)" style="width: 120px;">
-                    <option value="en">English</option>
-                    <option value="zh">中文</option>
-                    <option value="ja">日本語</option>
-                </select>
-            </div>
-
         </div>
     </div>
 </nav>
