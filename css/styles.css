@@ -10993,3 +10993,20 @@ header.masthead h1, header.masthead .h1 {
 #portfolio .container-fluid .portfolio-box:hover .portfolio-box-caption, #portfolio .container-sm .portfolio-box:hover .portfolio-box-caption, #portfolio .container-md .portfolio-box:hover .portfolio-box-caption, #portfolio .container-lg .portfolio-box:hover .portfolio-box-caption, #portfolio .container-xl .portfolio-box:hover .portfolio-box-caption, #portfolio .container-xxl .portfolio-box:hover .portfolio-box-caption {
   opacity: 1;
 }
+/* 让下拉框和下拉选项背景透明 */
+.lang-select {
+    background-color: transparent !important;
+    color: rgb(244, 98, 58);
+    font-family: inherit; /* 让字体跟 nav-link 一样 */
+}
+
+/* 下拉菜单展开时透明 */
+.lang-select option {
+    background-color: transparent !important;
+    color: rgb(244, 98, 58);
+}
+
+/* 兼容 Chrome/Edge 的透明背景 */
+.lang-select::-ms-expand {
+    background: transparent;
+}
