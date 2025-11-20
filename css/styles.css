@@ -11010,3 +11010,55 @@ header.masthead h1, header.masthead .h1 {
 .lang-select::-ms-expand {
     background: transparent;
 }
+
+/* ====== 语言下拉对齐微调（追加到 styles.css 末尾） ====== */
+
+/* 让下拉触发器本身（Language 链接）更“紧凑”，去掉左右多余内边距 */
+#langDropdown {
+  padding-left: 0.25rem;   /* 可调整，增大值会使触发器文字向右移动 */
+  padding-right: 0.25rem;
+  display: inline-block;
+  line-height: 1.5;
+}
+
+/* 强制下拉菜单靠右对齐其触发器（确保使用了 dropdown-menu-end） */
+.dropdown-menu.dropdown-menu-end {
+  right: 0 !important;
+  left: auto !important;
+  min-width: 0 !important;      /* 让宽度由内容决定，不强制拉宽 */
+  padding: 0;                   /* 去掉默认内层整体 padding，便于自定义每项间距 */
+  margin-top: 0.35rem;          /* 下拉与触发器的距离，可调整 */
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+/* 让每一项看起来像 nav-link（无左右大内边距）并和导航文字等高 */
+.dropdown-menu .dropdown-item {
+  padding: 0.35rem 0.25rem !important;   /* 上下 0.35rem，左右 0.25rem（微小间隙） */
+  color: rgb(244, 98, 58) !important;
+  background: transparent !important;
+  font-size: 0.9rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.05rem;
+  line-height: 1.5;
+}
+
+/* 如果你想文字从左侧对齐（与 Language 的左侧文字列对齐），取消下面注释并根据需要调整 */
+/*
+.dropdown-menu.dropdown-menu-end {
+  transform: translateX(-6px);  // 试着微调这个值（正值向右，负值向左）
+}
+*/
+
+/* 小屏幕（折叠菜单）下的额外微调：保持表现一致 */
+@media (max-width: 991.98px) {
+  #langDropdown {
+    padding-left: 0.5rem;  /* 折叠后保留一点内间距 */
+    padding-right: 0.5rem;
+  }
+  .dropdown-menu .dropdown-item {
+    padding: 0.5rem 0.5rem !important;
+  }
+}
