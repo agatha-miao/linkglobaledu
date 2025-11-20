@@ -35,14 +35,17 @@
                 <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
 
                 <!-- 语言选择下拉框 -->
-                <li class="nav-item ms-2">
-                    <select class="nav-link lang-select" onchange="setLang(this.value)" 
-                        style="border: none; background: transparent; padding: 0; height: auto; cursor: pointer; color: rgb(244, 98, 58);">
-                        <option value="en" style="color: rgb(244, 98, 58);">English</option>
-                        <option value="zh" style="color: rgb(244, 98, 58);">中文</option>
-                        <option value="ja" style="color: rgb(244, 98, 58);">日本語</option>
-                    </select>
-                </li>
+<li class="nav-item dropdown ms-2">
+    <a class="nav-link dropdown-toggle" href="#" id="langDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: rgb(244, 98, 58);">
+        Language
+    </a>
+    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="langDropdown" style="background: transparent; border: none; box-shadow: none;">
+        <li><a class="dropdown-item" href="#" onclick="setLang('en')" style="color: rgb(244, 98, 58); background: transparent;">English</a></li>
+        <li><a class="dropdown-item" href="#" onclick="setLang('zh')" style="color: rgb(244, 98, 58); background: transparent;">中文</a></li>
+        <li><a class="dropdown-item" href="#" onclick="setLang('ja')" style="color: rgb(244, 98, 58); background: transparent;">日本語</a></li>
+    </ul>
+</li>
+
             </ul>
         </div>
     </div>
