@@ -10994,35 +10994,68 @@ header.masthead h1, header.masthead .h1 {
   opacity: 1;
 }
 
-/* 顶部 Language 文本 */
-.lang-toggle {
+/* ------- 顶级 UI：毛玻璃语言菜单 ------- */
+.navbar .dropdown-menu {
+    background: rgba(20, 20, 20, 0.55) !important;
+    backdrop-filter: blur(14px) saturate(180%);
+    -webkit-backdrop-filter: blur(14px) saturate(180%);
+    border-radius: 14px;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.35);
+    padding: 12px 0;
+    min-width: 150px;
+    opacity: 0;
+    transform: translateY(10px);
+    transition: all 0.25s ease-out;
+}
+
+/* 下拉菜单展开动画 */
+.navbar .dropdown-menu.show {
+    opacity: 1 !important;
+    transform: translateY(0) !important;
+}
+
+/* ----- 菜单项 ----- */
+.dropdown-item {
+    color: #fff !important;
+    padding: 10px 22px;
+    font-size: 0.95rem;
+    transition: all 0.25s ease;
+}
+
+/* hover效果：顶奢简约橙色 */
+.dropdown-item:hover {
+    background: rgba(244, 98, 58, 0.22) !important;
     color: rgb(244, 98, 58) !important;
-    font-weight: 700;
+    padding-left: 26px;
 }
 
-/* 下拉菜单整体透明 + 去掉大白框 */
-.dropdown-menu-custom {
-    background: rgba(0,0,0,0.6) !important;     /* 半透明更高级 */
-    backdrop-filter: blur(6px);                /* 毛玻璃效果，超美 */
-    border: none !important;                   /* 去边框 */
-    padding: 10px 0;
-    min-width: 140px;
-}
-
-/* 项目美化 */
-.dropdown-menu-custom .dropdown-item {
-    font-size: 1rem;
+/* 选中语言高亮效果（带小圆点） */
+.dropdown-item.active-lang {
     color: rgb(244, 98, 58) !important;
-    padding: 10px 18px;
+    font-weight: 600;
+    position: relative;
 }
 
-/* hover 效果：轻微亮度，保持高级感 */
-.dropdown-menu-custom .dropdown-item:hover {
-    background: rgba(255, 255, 255, 0.08) !important;
+.dropdown-item.active-lang::before {
+    content: "•";
+    color: rgb(244, 98, 58);
+    position: absolute;
+    left: 10px;
+}
+
+/* Language 按钮 */
+.nav-link.dropdown-toggle {
     color: rgb(244, 98, 58) !important;
+    font-weight: 600;
 }
 
-/* 让下拉的位置和 Language 完美对齐 */
-.nav-item.dropdown .dropdown-menu-custom {
-    margin-top: 8px;
+/* 让 Language 和上面导航文字对齐 */
+.nav-item .dropdown-toggle {
+    padding-top: 0.2rem;
+}
+
+/* 下拉小箭头更优雅 */
+.nav-link.dropdown-toggle::after {
+    border-top-color: rgb(244, 98, 58) !important;
 }
