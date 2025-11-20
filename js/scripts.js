@@ -57,3 +57,23 @@ window.addEventListener('DOMContentLoaded', event => {
     });
 
 });
+function setLang(lang) {
+    localStorage.setItem("site_lang", lang);
+
+    // 移除旧的高亮
+    document.querySelectorAll(".dropdown-item").forEach(i => {
+        i.classList.remove("active-lang");
+    });
+
+    // 给当前语言加高亮
+    event.target.classList.add("active-lang");
+}
+
+// 刷新页面时保持选中语言高亮
+document.addEventListener("DOMContentLoaded", () => {
+    const saved = localStorage.getItem("site_lang");
+    if (saved) {
+        const item = document.querySelector(`.dropdown-item[onclick="setLang('${saved}')"]`);
+        if (item) item.classList.add("active-lang");
+    }
+});
