@@ -10994,25 +10994,35 @@ header.masthead h1, header.masthead .h1 {
   opacity: 1;
 }
 
-/* 让 dropdown 完全对齐 Language */
-.navbar .dropdown-menu {
-    background: transparent !important;      /* 背景透明 */
-    border: none !important;                /* 去掉白色边框 */
-    box-shadow: none !important;            /* 去掉阴影 */
-    padding-left: 0 !important;             /* 左对齐 */
-    margin-top: 0 !important;
-    transform: translateX(0) !important;    /* 禁止 Bootstrap 自动偏移 */
+/* 顶部 Language 文本 */
+.lang-toggle {
+    color: rgb(244, 98, 58) !important;
+    font-weight: 700;
 }
 
-/* dropdown 内的文字样式 */
-.navbar .dropdown-item {
-    color: rgb(244, 98, 58) !important;     /* 橙色字体 */
-    font-family: inherit !important;        /* 导航字体一致 */
-    padding-left: 0 !important;             /* 完全左对齐 */
+/* 下拉菜单整体透明 + 去掉大白框 */
+.dropdown-menu-custom {
+    background: rgba(0,0,0,0.6) !important;     /* 半透明更高级 */
+    backdrop-filter: blur(6px);                /* 毛玻璃效果，超美 */
+    border: none !important;                   /* 去边框 */
+    padding: 10px 0;
+    min-width: 140px;
 }
 
-/* hover 样式 */
-.navbar .dropdown-item:hover {
-    background: transparent !important;
-    text-decoration: underline;
+/* 项目美化 */
+.dropdown-menu-custom .dropdown-item {
+    font-size: 1rem;
+    color: rgb(244, 98, 58) !important;
+    padding: 10px 18px;
+}
+
+/* hover 效果：轻微亮度，保持高级感 */
+.dropdown-menu-custom .dropdown-item:hover {
+    background: rgba(255, 255, 255, 0.08) !important;
+    color: rgb(244, 98, 58) !important;
+}
+
+/* 让下拉的位置和 Language 完美对齐 */
+.nav-item.dropdown .dropdown-menu-custom {
+    margin-top: 8px;
 }
