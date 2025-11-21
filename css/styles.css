@@ -11060,11 +11060,6 @@ header.masthead h1, header.masthead .h1 {
     border-top-color: rgb(244, 98, 58) !important;
 }
 /* 修正下拉菜单对齐 + 样式 */
-#langDropdown {
-  /* 确保触发器本身 padding 合适 */
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
-}
 
 /* Bootstrap dropdown-menu-end 对齐 + 覆盖样式 */
 .dropdown-menu-end {
@@ -11075,4 +11070,7 @@ header.masthead h1, header.masthead .h1 {
 .navbar-nav .dropdown-menu {
     transform: translateY(4px) !important; 
     top: 100% !important;
+}
+.dropdown-menu {
+    text-align: center;
 }
