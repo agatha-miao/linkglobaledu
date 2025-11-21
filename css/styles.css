@@ -11018,7 +11018,7 @@ header.masthead h1, header.masthead .h1 {
 /* ----- 菜单项 ----- */
 .dropdown-item {
     color: #fff !important;
-    padding: 10px 22px;
+    padding: 10px 0; /* 左右不要 padding */
     font-size: 0.95rem;
     transition: all 0.25s ease;
 }
@@ -11027,7 +11027,6 @@ header.masthead h1, header.masthead .h1 {
 .dropdown-item:hover {
     background: rgba(244, 98, 58, 0.22) !important;
     color: rgb(244, 98, 58) !important;
-    padding-left: 26px;
 }
 
 /* 选中语言高亮效果（带小圆点） */
@@ -11059,18 +11058,15 @@ header.masthead h1, header.masthead .h1 {
 .nav-link.dropdown-toggle::after {
     border-top-color: rgb(244, 98, 58) !important;
 }
-/* 修正下拉菜单对齐 + 样式 */
 
-/* Bootstrap dropdown-menu-end 对齐 + 覆盖样式 */
-.dropdown-menu-end {
-  right: 0 !important;
-  left: auto !important;
-}
-/* 让下拉菜单与“Language”触发按钮完美垂直对齐 */
-.navbar-nav .dropdown-menu {
-    transform: translateY(4px) !important; 
-    top: 100% !important;
-}
+
+/* 让 dropdown 居中 */
 .dropdown-menu {
-    text-align: center;
+    text-align: center !important;
+}
+/* 让下拉菜单与 Language 完全水平居中对齐 */
+.navbar-nav .dropdown-menu {
+    left: 50% !important;
+    transform: translate(-50%, 4px) !important;
+    top: 100% !important;
 }
