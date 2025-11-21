@@ -77,3 +77,29 @@ document.addEventListener("DOMContentLoaded", () => {
         if (item) item.classList.add("active-lang");
     }
 });
+function setLang(lang) {
+  // 存储用户选择（可以用 localStorage）
+  localStorage.setItem('site_lang', lang);
+
+  // 示例：你可以根据语言重新加载页面或替换内容
+  // 如果你是单页替换内容的话，这里写对应逻辑。
+  console.log('语言选择：', lang);
+
+  // 以下是示例：选择后刷新（假设你有 index_zh.html, index_en.html）
+  if (lang === 'zh') {
+    window.location.href = '/index_zh.html';
+  } else if (lang === 'en') {
+    window.location.href = '/index_en.html';
+  } else if (lang === 'ja') {
+    window.location.href = '/index_ja.html';
+  }
+}
+
+// 页面加载时，设置高亮或做其他逻辑
+document.addEventListener('DOMContentLoaded', function() {
+  const saved = localStorage.getItem('site_lang');
+  if (saved) {
+    // 可以根据保存的语言做标记
+    // 例如给对应的 .dropdown-item 加上 class
+  }
+});
