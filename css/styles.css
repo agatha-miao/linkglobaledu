@@ -11071,15 +11071,8 @@ header.masthead h1, header.masthead .h1 {
   right: 0 !important;
   left: auto !important;
 }
-
-/* 下拉菜单项样式 */
-.dropdown-item {
-  font-family: inherit;
-  font-size: 0.9rem;
-  color: rgb(244, 98, 58) !important;
-}
-
-.dropdown-item:hover {
-  background-color: rgba(244, 98, 58, 0.15) !important;
-  color: rgb(244, 98, 58) !important;
+/* 让下拉菜单与“Language”触发按钮完美垂直对齐 */
+.navbar-nav .dropdown-menu {
+    transform: translateY(4px) !important; 
+    top: 100% !important;
 }
