@@ -11070,3 +11070,11 @@ header.masthead h1, header.masthead .h1 {
     transform: translate(-50%, 4px) !important;
     top: 100% !important;
 }
+.nav-item.dropdown {
+    position: relative;
+}
+.nav-item.dropdown .dropdown-menu {
+    left: 50% !important;
+    transform: translateX(-50%) translateY(4px) !important;
+    top: 100% !important;
+}
