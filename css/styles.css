@@ -11078,3 +11078,9 @@ header.masthead h1, header.masthead .h1 {
     transform: translateX(-50%) translateY(4px) !important;
     top: 100% !important;
 }
+/* FINAL：强制 dropdown 精准落在 Language 正下方 */
+.nav-item.dropdown .dropdown-menu[data-bs-popper] {
+    left: 50% !important;
+    transform: translateX(-50%) translateY(4px) !important;
+    top: 100% !important;
+}
