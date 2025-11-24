@@ -199,7 +199,8 @@
                         <a class="btn btn-primary btn-xl" href="https://work.weixin.qq.com/kfid/kfc95253f828ba726b2" target="_blank" rel="noopener noreferrer">
                             <i class="bi-wechat me-2"></i>联系微信客服
                         </a>
-                        <p class="text-muted mt-4 mb-0">如果未自动打开，请复制链接在微信中打开。</p>
+                        <p class="text-muted mt-4 mb-3">如果未自动打开，请扫描下方二维码开始免费咨询。</p>
+                        <div id="wechat-qr" class="d-flex justify-content-center"></div>
                     </div>
                 </div>
             </div>
@@ -212,8 +213,16 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
         <!-- SimpleLightbox plugin JS-->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
         <!-- Core theme JS-->
         <script src="js/scripts.js"></script>
+        <script>
+            new QRCode(document.getElementById('wechat-qr'), {
+                text: 'https://work.weixin.qq.com/kfid/kfc95253f828ba726b2',
+                width: 260,
+                height: 260,
+            });
+        </script>
         <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
         <!-- * *                               SB Forms JS                               * *-->
         <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
