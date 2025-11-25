@@ -11206,3 +11206,7 @@ header.masthead h1, header.masthead .h1 {
     transform: translateX(-50%) translateY(4px) !important;
     top: 100% !important;
 }
+.service-icon i {
+    opacity: 1 !important;
+    display: inline-block !important;
+}
