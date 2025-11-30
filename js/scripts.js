@@ -56,6 +56,61 @@ window.addEventListener('DOMContentLoaded', event => {
         elements: '#portfolio a.portfolio-box'
     });
 
+    // Service system tabs
+    const serviceTabs = document.querySelectorAll('.service-tab');
+    const servicePanels = document.querySelectorAll('.service-panel');
+
+    serviceTabs.forEach(tab => {
+        tab.addEventListener('click', () => {
+            const targetId = tab.getAttribute('data-target');
+            const targetPanel = document.getElementById(targetId);
+
+            serviceTabs.forEach(btn => {
+                btn.classList.remove('active');
+                btn.setAttribute('aria-selected', 'false');
+            });
+
+            servicePanels.forEach(panel => panel.classList.remove('active'));
+
+            tab.classList.add('active');
+            tab.setAttribute('aria-selected', 'true');
+            if (targetPanel) {
+                targetPanel.classList.add('active');
+            }
+        });
+    });
+
+    // Timeline chips interaction
+    const timelineChips = document.querySelectorAll('.timeline-chip');
+    const timelinePanels = document.querySelectorAll('.timeline-panel');
+
+    timelineChips.forEach(chip => {
+        chip.addEventListener('click', () => {
+            const targetId = chip.getAttribute('data-target');
+            const targetPanel = document.getElementById(targetId);
+
+            timelineChips.forEach(btn => {
+                btn.classList.remove('active');
+                btn.setAttribute('aria-selected', 'false');
+            });
+
+            timelinePanels.forEach(panel => panel.classList.remove('active'));
+
+            chip.classList.add('active');
+            chip.setAttribute('aria-selected', 'true');
+            if (targetPanel) {
+                targetPanel.classList.add('active');
+            }
+        });
+    });
+
+});
+function setLang(lang) {
+    localStorage.setItem('site_lang', lang);
+
+    const current = window.location.pathname;
+    const isStudyPage = current.includes('study');
+
 });
 function setLang(lang) {
     localStorage.setItem('site_lang', lang);
