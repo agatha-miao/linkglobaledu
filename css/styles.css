@@ -11210,12 +11210,10 @@ header.masthead h1, header.masthead .h1 {
     opacity: 1 !important;
     display: inline-block !important;
 }
-
 /* Offer showcase */
 .offer-section {
   position: relative;
   overflow: hidden;
-  padding-top: clamp(32px, 4vw, 48px);
 }
 
 .offer-section::before {
@@ -11233,9 +11231,9 @@ header.masthead h1, header.masthead .h1 {
 
 .offer-card {
   display: grid;
-  grid-template-columns: minmax(420px, 58%) 1fr;
-  gap: clamp(26px, 4vw, 40px);
-  padding: clamp(28px, 4.5vw, 40px);
+  grid-template-columns: minmax(260px, 38%) 1fr;
+  gap: clamp(24px, 4vw, 36px);
+  padding: clamp(20px, 4vw, 28px);
   background: linear-gradient(135deg, #ffffff, #f7f9fc);
   border-radius: 22px;
   border: 1px solid rgba(12, 16, 24, 0.06);
@@ -11246,7 +11244,7 @@ header.masthead h1, header.masthead .h1 {
 .offer-media {
   position: relative;
   width: 100%;
-  padding-top: 108%;
+  padding-top: 70%;
   border-radius: 18px;
   background-size: cover;
   background-position: center;
@@ -11260,20 +11258,10 @@ header.masthead h1, header.masthead .h1 {
   position: absolute;
   inset: 0;
   background: linear-gradient(160deg, rgba(0, 0, 0, 0.18) 0%, rgba(0, 0, 0, 0) 60%);
-  pointer-events: none;
 }
 
 .offer-content {
   position: relative;
-}
-
-.offer-media a {
-  display: block;
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  inset: 0;
-  cursor: zoom-in;
 }
 
 .offer-pill {
@@ -11292,18 +11280,17 @@ header.masthead h1, header.masthead .h1 {
 
 .offer-title {
   margin-top: 14px;
-  margin-bottom: 8px;
+  margin-bottom: 10px;
   font-weight: 800;
   color: #0f1a2c;
   letter-spacing: 0.01em;
-  font-size: 1.26rem;
 }
 
 .offer-meta {
   margin: 0;
   color: #4a5568;
   line-height: 1.7;
-  font-size: 0.9rem;
+  font-size: 0.98rem;
 }
 
 .offer-section .carousel-indicators [data-bs-target] {
@@ -11343,7 +11330,7 @@ header.masthead h1, header.masthead .h1 {
   }
 
   .offer-media {
-    padding-top: 92%;
+    padding-top: 52%;
   }
 }
 
@@ -11353,61 +11340,6 @@ header.masthead h1, header.masthead .h1 {
   }
 
   .offer-title {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
   }
-}
-
-.timeline-grid {
-  display: grid;
-  gap: 18px;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-}
-
-.timeline-card {
-  background: #ffffff;
-  border: 1px solid rgba(12, 16, 24, 0.08);
-  border-radius: 14px;
-  padding: 18px 20px;
-  box-shadow: 0 14px 32px rgba(0, 0, 0, 0.04);
-}
-
-.timeline-country {
-  font-weight: 800;
-  color: #f4623a;
-  margin-bottom: 8px;
-  letter-spacing: 0.02em;
-}
-
-.timeline-text {
-  margin: 0;
-  color: #4a5568;
-  line-height: 1.6;
-}
-
-.timeline-list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: grid;
-  gap: 10px;
-}
-
-.timeline-list li {
-  color: #2d3748;
-  line-height: 1.6;
-  display: grid;
-  grid-template-columns: auto 1fr;
-  gap: 10px;
-  align-items: start;
-}
-
-.timeline-phase {
-  display: inline-flex;
-  padding: 6px 10px;
-  border-radius: 12px;
-  background: rgba(244, 98, 58, 0.1);
-  color: #c94f2e;
-  font-weight: 700;
-  font-size: 0.9rem;
-  white-space: nowrap;
 }
