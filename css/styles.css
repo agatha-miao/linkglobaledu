@@ -11456,6 +11456,13 @@ header.masthead h1, header.masthead .h1 {
   border-radius: 22px;
   border: 1px solid rgba(12, 16, 24, 0.06);
   box-shadow: 0 20px 52px rgba(0, 0, 0, 0.08);
+  grid-template-columns: minmax(260px, 38%) 1fr;
+  gap: clamp(24px, 4vw, 36px);
+  padding: clamp(20px, 4vw, 28px);
+  background: linear-gradient(135deg, #ffffff, #f7f9fc);
+  border-radius: 22px;
+  border: 1px solid rgba(12, 16, 24, 0.06);
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.08);
   align-items: center;
 }
 
@@ -11463,6 +11470,7 @@ header.masthead h1, header.masthead .h1 {
   position: relative;
   width: 100%;
   padding-top: 78%;
+  padding-top: 70%;
   border-radius: 18px;
   background-size: cover;
   background-position: center;
@@ -11513,6 +11521,10 @@ header.masthead h1, header.masthead .h1 {
   color: #0f1a2c;
   letter-spacing: 0.01em;
   font-size: 1.26rem;
+  margin-bottom: 10px;
+  font-weight: 800;
+  color: #0f1a2c;
+  letter-spacing: 0.01em;
 }
 
 .offer-meta {
@@ -11520,6 +11532,7 @@ header.masthead h1, header.masthead .h1 {
   color: #4a5568;
   line-height: 1.7;
   font-size: 0.9rem;
+  font-size: 0.98rem;
 }
 
 .offer-section .carousel-indicators [data-bs-target] {
@@ -11560,6 +11573,7 @@ header.masthead h1, header.masthead .h1 {
 
   .offer-media {
     padding-top: 72%;
+    padding-top: 52%;
   }
 }
 
@@ -11688,5 +11702,6 @@ header.masthead h1, header.masthead .h1 {
 
   .panel-tag {
     font-size: 0.95rem;
+    font-size: 1.2rem;
   }
 }

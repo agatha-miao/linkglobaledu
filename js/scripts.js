@@ -111,6 +111,13 @@ function setLang(lang) {
     const current = window.location.pathname;
     const isStudyPage = current.includes('study');
 
+});
+function setLang(lang) {
+    localStorage.setItem('site_lang', lang);
+
+    const current = window.location.pathname;
+    const isStudyPage = current.includes('study');
+
     const jobMap = {
         zh: '/index.html',
         en: '/index_en.html',
