@@ -35,20 +35,16 @@
                 <li class="nav-item"><a class="nav-link" href="#portfolio">讲师团队</a></li>
                 <li class="nav-item"><a class="nav-link" href="#offers">Offer战绩</a></li>
                 <li class="nav-item"><a class="nav-link" href="#contact">联系我们</a></li>
-
-<li class="nav-item dropdown">
-  <a class="nav-link dropdown-toggle" href="#" id="langDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-    Language
-  </a>
-  <ul class="dropdown-menu" aria-labelledby="langDropdown">
-    <li><a class="dropdown-item" href="#" onclick="setLang('en')">English</a></li>
-    <li><a class="dropdown-item" href="#" onclick="setLang('zh')">中文</a></li>
-    <li><a class="dropdown-item" href="#" onclick="setLang('ja')">日本語</a></li>
-  </ul>
-</li>
-
-
-
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="langDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Language
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="langDropdown">
+                        <li><a class="dropdown-item" data-lang="en" href="#" onclick="setLang('en')">English</a></li>
+                        <li><a class="dropdown-item" data-lang="zh" href="#" onclick="setLang('zh')">中文</a></li>
+                        <li><a class="dropdown-item" data-lang="ja" href="#" onclick="setLang('ja')">日本語</a></li>
+                    </ul>
+                </li>
             </ul>
         </div>
     </div>
@@ -242,7 +238,7 @@
             <div class="container px-4 px-lg-5">
                 <div class="text-center mb-5">
                     <h2 class="text-uppercase">我们的特点</h2>
-                    <p class="text-muted">以顶级师资、系统规划与全流程陪跑，陪你抵达理想学校与职业。</p>
+                    <p class="text-muted">以顶级师资、系统规划与全流程陪跑，陪你抵达理想职业与长远发展。</p>
                 </div>
                 <div class="row gx-4 gx-lg-5 gy-4">
                     <div class="col-lg-4 col-md-6">
@@ -269,21 +265,59 @@
                 </div>
             </div>
         </section>
+        <section class="page-section" id="service-system">
+            <div class="container px-4 px-lg-5">
+                <div class="text-center mb-5">
+                    <h2 class="text-uppercase">服务体系</h2>
+                    <p class="text-muted">参考 DBC 职梦的方法论，提供贯穿求职全流程的系统化服务。</p>
+                </div>
+                <div class="row gx-4 gx-lg-5 gy-4">
+                    <div class="col-lg-3 col-md-6">
+                        <div class="service-card h-100">
+                            <div class="service-icon mb-3"><i class="bi-person-badge"></i></div>
+                            <h3 class="h5">专属导师 1v1</h3>
+                            <p class="mb-0">行业导师全程陪跑，定制职位地图、时间线与突破策略，匹配跨区域就业目标。</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="service-card h-100">
+                            <div class="service-icon mb-3"><i class="bi-clipboard-check"></i></div>
+                            <h3 class="h5">背景与简历加速</h3>
+                            <p class="mb-0">项目与实习组合设计，中文/英文/日文多语简历精修，确保亮点与岗位匹配度。</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="service-card h-100">
+                            <div class="service-icon mb-3"><i class="bi-chat-dots"></i></div>
+                            <h3 class="h5">笔面试闭环训练</h3>
+                            <p class="mb-0">笔试、网测、案例面、技术面分阶段训练，实时反馈与录屏复盘，缩短拿 offer 周期。</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="service-card h-100">
+                            <div class="service-icon mb-3"><i class="bi-link-45deg"></i></div>
+                            <h3 class="h5">资源与岗位联动</h3>
+                            <p class="mb-0">港新日美及中国大陆多渠道职位推荐，结合内推、校招与社招窗口，提升转化率。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
         <!-- Portfolio-->
         <section class="page-section" id="portfolio">
             <div class="container px-4 px-lg-5">
                 <div class="text-center mb-5">
                     <h2 class="text-uppercase">讲师团队</h2>
-                    <p class="text-muted">六位行业导师，覆盖 AI、咨询、财务、数字化与留学求职核心赛道。</p>
+                    <p class="text-muted">六位行业导师，覆盖 AI、咨询、财务、数字化等核心求职赛道。</p>
                 </div>
                 <div class="row g-4">
                     <div class="col-lg-4 col-md-6">
                         <div class="mentor-card h-100">
                             <img class="mentor-photo" src="assets/img/portfolio/fullsize/wu.png" alt="吴老师" />
                             <div class="mentor-content">
-                                <div class="mentor-tag">AI / LLM / 名校申请</div>
+                                <div class="mentor-tag">AI / LLM / 技术求职</div>
                                 <h3 class="mentor-name">Cici老师</h3>
-                                <p class="mentor-brief">Cici老师，东京大学计算机博士、知名日企在职工程师，专精 AI 与大语言模型研发。辅导计算机与 AI方向 求职，帮助多名学生成功申请日本Top3大学。</p>
+                                <p class="mentor-brief">Cici老师，东京大学计算机博士、知名日企在职工程师，专精 AI 与大语言模型研发。辅导计算机与 AI 方向求职，深度训练算法、系统设计与技术面试表现。</p>
                                 <button class="btn btn-outline-light btn-sm" data-bs-toggle="modal" data-bs-target="#mentorWu">查看详细</button>
                             </div>
                         </div>
@@ -431,7 +465,7 @@
         <section class="page-section bg-dark text-white cta-compact">
             <div class="container px-4 px-lg-5 text-center">
                 <h2 class="mb-4">免费咨询</h2>
-                <p class="text-white-75 mb-4">与专业顾问沟通，规划留学与就业路径。</p>
+                <p class="text-white-75 mb-4">与专业顾问沟通，规划求职与职业发展路径。</p>
                 
             </div>
         </section>
@@ -468,13 +502,12 @@
                     <div class="modal-body">
                         <p>Cici老师毕业于东京大学计算机科学博士项目，现任职于日本某知名企业核心研发部门，长期从事大语言模型（LLM）、人工智能、机器学习及核心系统开发等方向的研究与工程实践，拥有扎实的技术功底与丰富的项目经验。</p>
                         <p>作为企业工程师，Cici老师多次参与实习生与应届生的技术面试流程，熟悉日本 IT 企业的筛选机制、面试问法与技术考察重点，能够根据学生背景提供精准的求职辅导，包括项目亮点提炼、技术栈梳理、算法基础强化与日式表达优化。</p>
-                        <p>在留学申请方面，Cici老师已成功指导多名学生获得东京大学、早稲田大学等顶尖名校的计算机和信息类专业录取，擅长帮助学生构建研究计划书、明确研究方向、优化技术逻辑，并在套磁与申请策略方面经验丰富。</p>
                         <h6 class="mt-4">适合学生方向</h6>
                         <ul class="mb-0">
-                            <li>计算机 / AI / LLM / 信息工程留学</li>
                             <li>日本 IT 求职辅导（笔试 / 机试 / 技术面）</li>
-                            <li>东京大学、早稲田等名校申请支持</li>
+                            <li>算法与系统设计专项模拟、项目亮点提炼</li>
                             <li>技术研究与项目背景提升</li>
+                            <li>跨文化沟通与日语/英语技术表达优化</li>
                         </ul>
                     </div>
                 </div>
@@ -519,7 +552,7 @@
                             <li>结构化逻辑思维与商业分析能力提升</li>
                             <li>简历项目亮点提炼与职业路径规划</li>
                             <li>麦肯锡 / BCG / 贝恩等顶尖咨询求职策略</li>
-                            <li>商学院 / 管理类专业留学申请指导</li>
+                            <li>商学院 / 管理类职业路径规划与竞争力提升</li>
                         </ul>
                         <p class="mb-0">他的学生已成功进入 McKinsey、BCG、Bain 及日本与中国的领先战略咨询机构和商学院。</p>
                     </div>
