@@ -11210,3 +11210,204 @@ header.masthead h1, header.masthead .h1 {
     opacity: 1 !important;
     display: inline-block !important;
 }
+
+/* Offer showcase */
+.offer-section {
+  position: relative;
+  overflow: hidden;
+  padding-top: clamp(32px, 4vw, 48px);
+}
+
+.offer-section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at 20% 20%, rgba(244, 98, 58, 0.08), transparent 35%), radial-gradient(circle at 80% 0%, rgba(0, 0, 0, 0.04), transparent 25%);
+  pointer-events: none;
+}
+
+#offerCarousel {
+  position: relative;
+  z-index: 1;
+}
+
+.offer-card {
+  display: grid;
+  grid-template-columns: minmax(420px, 58%) 1fr;
+  gap: clamp(26px, 4vw, 40px);
+  padding: clamp(28px, 4.5vw, 40px);
+  background: linear-gradient(135deg, #ffffff, #f7f9fc);
+  border-radius: 22px;
+  border: 1px solid rgba(12, 16, 24, 0.06);
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.08);
+  align-items: center;
+}
+
+.offer-media {
+  position: relative;
+  width: 100%;
+  padding-top: 108%;
+  border-radius: 18px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.4), 0 16px 40px rgba(0, 0, 0, 0.12);
+  overflow: hidden;
+}
+
+.offer-media::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(160deg, rgba(0, 0, 0, 0.18) 0%, rgba(0, 0, 0, 0) 60%);
+  pointer-events: none;
+}
+
+.offer-content {
+  position: relative;
+}
+
+.offer-media a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  inset: 0;
+  cursor: zoom-in;
+}
+
+.offer-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 14px;
+  border-radius: 999px;
+  background: rgba(244, 98, 58, 0.12);
+  color: #c94f2e;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+}
+
+.offer-title {
+  margin-top: 14px;
+  margin-bottom: 8px;
+  font-weight: 800;
+  color: #0f1a2c;
+  letter-spacing: 0.01em;
+  font-size: 1.26rem;
+}
+
+.offer-meta {
+  margin: 0;
+  color: #4a5568;
+  line-height: 1.7;
+  font-size: 0.9rem;
+}
+
+.offer-section .carousel-indicators [data-bs-target] {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: rgba(15, 26, 44, 0.28);
+  border: none;
+  margin: 0 6px;
+  transition: all 0.3s ease;
+}
+
+.offer-section .carousel-indicators .active {
+  background-color: #f4623a;
+  transform: scale(1.1);
+}
+
+.offer-section .carousel-control-prev-icon,
+.offer-section .carousel-control-next-icon {
+  filter: invert(38%) sepia(76%) saturate(450%) hue-rotate(340deg) brightness(95%) contrast(98%);
+}
+
+.offer-section .carousel-control-prev,
+.offer-section .carousel-control-next {
+  opacity: 0.8;
+  transition: opacity 0.25s ease;
+}
+
+.offer-section .carousel-control-prev:hover,
+.offer-section .carousel-control-next:hover {
+  opacity: 1;
+}
+
+@media (max-width: 991.98px) {
+  .offer-card {
+    grid-template-columns: 1fr;
+  }
+
+  .offer-media {
+    padding-top: 92%;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .offer-card {
+    padding: 18px;
+  }
+
+  .offer-title {
+    font-size: 1.1rem;
+  }
+}
+
+.timeline-grid {
+  display: grid;
+  gap: 18px;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+}
+
+.timeline-card {
+  background: #ffffff;
+  border: 1px solid rgba(12, 16, 24, 0.08);
+  border-radius: 14px;
+  padding: 18px 20px;
+  box-shadow: 0 14px 32px rgba(0, 0, 0, 0.04);
+}
+
+.timeline-country {
+  font-weight: 800;
+  color: #f4623a;
+  margin-bottom: 8px;
+  letter-spacing: 0.02em;
+}
+
+.timeline-text {
+  margin: 0;
+  color: #4a5568;
+  line-height: 1.6;
+}
+
+.timeline-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 10px;
+}
+
+.timeline-list li {
+  color: #2d3748;
+  line-height: 1.6;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 10px;
+  align-items: start;
+}
+
+.timeline-phase {
+  display: inline-flex;
+  padding: 6px 10px;
+  border-radius: 12px;
+  background: rgba(244, 98, 58, 0.1);
+  color: #c94f2e;
+  font-weight: 700;
+  font-size: 0.9rem;
+  white-space: nowrap;
+}
