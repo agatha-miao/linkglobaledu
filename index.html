@@ -32,21 +32,18 @@
                 <li class="nav-item"><a class="nav-link" href="#about">关于我们</a></li>
                 <li class="nav-item"><a class="nav-link" href="#services">服务内容</a></li>
                 <li class="nav-item"><a class="nav-link" href="#portfolio">讲师团队</a></li>
+                <li class="nav-item"><a class="nav-link" href="#offers">Offer战绩</a></li>
                 <li class="nav-item"><a class="nav-link" href="#contact">联系我们</a></li>
-
-<li class="nav-item dropdown">
-  <a class="nav-link dropdown-toggle" href="#" id="langDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-    Language
-  </a>
-  <ul class="dropdown-menu" aria-labelledby="langDropdown">
-    <li><a class="dropdown-item" href="#" onclick="setLang('en')">English</a></li>
-    <li><a class="dropdown-item" href="#" onclick="setLang('zh')">中文</a></li>
-    <li><a class="dropdown-item" href="#" onclick="setLang('ja')">日本語</a></li>
-  </ul>
-</li>
-
-
-
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="langDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Language
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="langDropdown">
+                        <li><a class="dropdown-item" data-lang="en" href="#" onclick="setLang('en')">English</a></li>
+                        <li><a class="dropdown-item" data-lang="zh" href="#" onclick="setLang('zh')">中文</a></li>
+                        <li><a class="dropdown-item" data-lang="ja" href="#" onclick="setLang('ja')">日本語</a></li>
+                    </ul>
+                </li>
             </ul>
         </div>
     </div>
@@ -56,12 +53,15 @@
             <div class="container px-4 px-lg-5 h-100">
                 <div class="row gx-4 gx-lg-5 h-100 align-items-center justify-content-center text-center">
                     <div class="col-lg-8 align-self-end">
-                        <h1 id="hero-title" class="text-white font-weight-bold">领途环球教育，您身边的日本与香港升学就职辅导专家</h1>
+                        <h1 id="hero-title" class="text-white font-weight-bold">领途环球，面向全球的求职平台</h1>
                         <hr class="divider" />
                     </div>
                     <div class="col-lg-8 align-self-baseline">
-                        <p id="hero-subtitle" class="text-white-75 mb-5">提供日本大学院升学、日本就职、香港与新加坡就职，以及留学生回国就业一站式服务</p>
-                        <a id="hero-button" class="btn btn-primary btn-xl" href="#contact">联系我们</a>
+                        <p id="hero-subtitle" class="text-white-75 mb-4">专注日本、香港、新加坡、中国大陆与海外回流的高端求职平台，导师来自全球顶级咨询、科技与金融机构。</p>
+                        <div class="d-flex justify-content-center gap-3 flex-wrap">
+                            <a id="hero-button" class="btn btn-primary btn-xl" href="#contact">联系我们</a>
+                            <a class="btn btn-outline-light btn-xl" href="study.html">查看留学服务</a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -71,10 +71,10 @@
             <div class="container px-4 px-lg-5">
                 <div class="row gx-4 gx-lg-5 justify-content-center">
                     <div class="col-lg-9 text-center">
-                        <h2 class="text-white mt-0">关于领途环球教育</h2>
+                        <h2 class="text-white mt-0">关于领途环球｜面向全球的求职平台</h2>
                         <hr class="divider divider-light" />
-                        <p class="text-white-75 mb-3">专注为海外留学生提供日本大学院升学、日本就职、香港就职、新加坡就职及留学生回国就业辅导。我们的专业顾问团队为你制定最适合的升学与职业发展路径。</p>
-                        <p class="text-white fw-semibold mb-4">立足亚洲，面向世界，陪伴每一位青年探索梦想与可能性，让人人都有勇气迈出通往自己未来的第一步！</p>
+                        <p class="text-white-75 mb-3">专注为海内外人才提供日本、香港、新加坡、中国大陆及跨区域的求职方案。我们的专业顾问团队为你制定最适合的职业发展路径。</p>
+                        <p class="text-white fw-semibold mb-4">立足亚洲，面向世界，以系统化职业加速陪伴每一位青年迈向顶尖企业与长期成长。</p>
                         <a class="btn btn-light btn-xl" href="#services">开启你的未来</a>
                     </div>
                 </div>
@@ -83,73 +83,133 @@
         <!-- Services-->
         <section class="page-section" id="services">
             <div class="container px-4 px-lg-5">
-                <h2 class="text-center mt-0">高端升学与就业全链路服务</h2>
+                <h2 class="text-center mt-0">高端求职全链路服务</h2>
                 <hr class="divider" />
                 <div class="row gx-4 gx-lg-5 gy-4">
                     <div class="col-lg-4 col-md-6">
                         <div class="service-card h-100">
                             <div class="service-icon mb-3"><i class="bi-mortarboard"></i></div>
-                            <h3 id="service1" class="h4">日本升学全链路辅导</h3>
+                            <h3 id="service1" class="h4">日本求职全链路辅导</h3>
                             <ul class="service-list">
-                                <li>本科/硕博全阶段：JLPT 辅导、EJU 文综/理综、志望理由书与校内考指导</li>
-                                <li>研究室分析、研究计划书修改、面试与笔试对策</li>
-                                <li>SGU（Super Global University）全英语申请与授课支持，覆盖文理工艺多方向</li>
+                                <li>日语/英语双语简历、ES 精修与项目亮点梳理</li>
+                                <li>SPI、网测、群面、技术面试全流程专项训练</li>
+                                <li>行业导师带练，咨询、IT、制造等定向求职策略</li>
                             </ul>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6">
                         <div class="service-card h-100">
                             <div class="service-icon mb-3"><i class="bi-building"></i></div>
-                            <h3 id="service2" class="h4">日本就职辅导</h3>
+                            <h3 id="service2" class="h4">香港/新加坡求职辅导</h3>
                             <ul class="service-list">
-                                <li>日语/英语双语简历与 ES 精修、项目亮点梳理</li>
-                                <li>SPI、网测、群面与技术面试专项训练</li>
-                                <li>目标行业定向策略与名企内推机会</li>
+                                <li>英/粤语简历升级、案例面、财务建模、产品与数据岗位面试训练</li>
+                                <li>联动港新职业市场的申请节奏、岗位推荐与实习组合</li>
+                                <li>投行、咨询、科技三大赛道一对一陪跑</li>
                             </ul>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6">
                         <div class="service-card h-100">
                             <div class="service-icon mb-3"><i class="bi-journal-richtext"></i></div>
-                            <h3 class="h4">香港升学规划</h3>
+                            <h3 class="h4">中国大陆求职辅导</h3>
                             <ul class="service-list">
-                                <li>港校硕博/授课型商科、理工、文社科申请策略与时间线管理</li>
-                                <li>PS/Resume/Recommendation 打磨，科研与实习背景提升</li>
-                                <li>面试模拟与授课/科研混合项目的匹配度评估</li>
+                                <li>校招/社招节奏管理，岗位匹配与区域策略</li>
+                                <li>多语言面试强化，STAR 法项目表达与案例呈现</li>
+                                <li>与导师共创转型与晋升路径，覆盖财务、咨询、产品、AI 等方向</li>
                             </ul>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6">
                         <div class="service-card h-100">
                             <div class="service-icon mb-3"><i class="bi-briefcase"></i></div>
-                            <h3 id="service3" class="h4">香港就职辅导</h3>
+                            <h3 id="service3" class="h4">北美/海外回流求职</h3>
                             <ul class="service-list">
-                                <li>英文/粤语双语求职策略，投行、咨询、四大及科技岗位实战演练</li>
-                                <li>案例面试、财务建模、产品与数据岗位面试训练</li>
-                                <li>港新联动求职方案与跨区域 Offer 策略</li>
+                                <li>海外校招/社招策略，简历本地化与文化差异表达</li>
+                                <li>技术与行为面试陪练，系统设计与案例驱动表达</li>
+                                <li>回国/回港 Offer 策略与跨地区职业加速</li>
                             </ul>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6">
                         <div class="service-card h-100">
                             <div class="service-icon mb-3"><i class="bi-compass"></i></div>
-                            <h3 class="h4">新加坡就职辅导</h3>
+                            <h3 class="h4">求职技能强化营</h3>
                             <ul class="service-list">
-                                <li>科技/咨询/金融科技岗位洞察与本地化职业规划</li>
-                                <li>英文简历升级、技术亮点呈现与跨文化沟通训练</li>
-                                <li>针对 AI / 数据 / IT 岗位的面试、笔试陪跑与职业加速</li>
+                                <li>笔试/网测/群面/案例面试集中训练营</li>
+                                <li>AI、数据、咨询、产品等赛道专项模拟</li>
+                                <li>行业导师点评与一对一纠偏，沉浸式提升</li>
                             </ul>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6">
                         <div class="service-card h-100">
                             <div class="service-icon mb-3"><i class="bi-rocket"></i></div>
-                            <h3 id="service4" class="h4">回国 / 回港职业加速</h3>
+                            <h3 id="service4" class="h4">行业导师联动计划</h3>
                             <ul class="service-list">
-                                <li>校招/社招规划，岗位匹配与地域选择策略</li>
-                                <li>多语言简历与面试强化，STAR 法项目表达</li>
-                                <li>长期职业路径设计，助力转型与晋升</li>
+                                <li>四大、咨询、科技高管与 HR 合作辅导</li>
+                                <li>行业内推与实习组合，为目标岗位造势</li>
+                                <li>长期职业路径共创，兼顾首份工作与后续晋升</li>
                             </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="page-section bg-light" id="timeline">
+            <div class="container px-4 px-lg-5">
+                <div class="text-center mb-5">
+                    <h2 class="text-uppercase">留学生求职线</h2>
+                    <p class="text-muted">按学段拆分的求职节奏，点击分类即可查看对应学年要点，避免信息堆砌。</p>
+                </div>
+                <div class="timeline-switcher" role="tablist">
+                    <button class="timeline-chip active" data-target="timeline-ug" role="tab" aria-selected="true">本科</button>
+                    <button class="timeline-chip" data-target="timeline-grad" role="tab" aria-selected="false">研究生</button>
+                </div>
+                <div class="timeline-panels">
+                    <div class="timeline-panel active" id="timeline-ug" role="tabpanel">
+                        <div class="timeline-panel-header">
+                            <div>
+                                <p class="panel-eyebrow">Undergraduate</p>
+                                <h3 class="panel-title">本科｜求职时间表</h3>
+                            </div>
+                            <span class="panel-tag">大一-大四 · 项目/实习 · 求职加速</span>
+                        </div>
+                        <div class="timeline-columns timeline-grid-4">
+                            <div class="timeline-block">
+                                <div class="block-label">大一</div>
+                                <p>完成行业探索与语言打底，开启社团/竞赛积累，搭建能持续迭代的个人履历框架。</p>
+                            </div>
+                            <div class="timeline-block">
+                                <div class="block-label">大二</div>
+                                <p>锁定目标赛道（咨询、科技、金融等），共创项目/科研成果，并行准备网测与群面基础。</p>
+                            </div>
+                            <div class="timeline-block">
+                                <div class="block-label">大三</div>
+                                <p>冲刺暑期与提前批，强化案例/技术面试与多语表达，争取实习转正或早期内定。</p>
+                            </div>
+                            <div class="timeline-block">
+                                <div class="block-label">大四</div>
+                                <p>秋招全流程陪跑：网申、笔试、面试与 offer 谈判，兼顾跨区域与回流机会。</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="timeline-panel" id="timeline-grad" role="tabpanel">
+                        <div class="timeline-panel-header">
+                            <div>
+                                <p class="panel-eyebrow">Graduate</p>
+                                <h3 class="panel-title">研究生｜求职时间表</h3>
+                            </div>
+                            <span class="panel-tag">研一-研二 · 科研/实习 · Offer 兑现</span>
+                        </div>
+                        <div class="timeline-columns timeline-grid-3">
+                            <div class="timeline-block">
+                                <div class="block-label">研一</div>
+                                <p>以科研/项目成果与行业案例并行，深挖量化指标与故事线，衔接春季/暑期实习窗口。</p>
+                            </div>
+                            <div class="timeline-block">
+                                <div class="block-label">研二</div>
+                                <p>定向校招/社招与回流策略，强化技术/案例面与高阶沟通，完成 offer 策略与入职准备。</p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -159,7 +219,7 @@
             <div class="container px-4 px-lg-5">
                 <div class="text-center mb-5">
                     <h2 class="text-uppercase">我们的特点</h2>
-                    <p class="text-muted">以顶级师资、系统规划与全流程陪跑，陪你抵达理想学校与职业。</p>
+                    <p class="text-muted">以顶级师资、系统规划与全流程陪跑，陪你抵达理想职业与长远发展。</p>
                 </div>
                 <div class="row gx-4 gx-lg-5 gy-4">
                     <div class="col-lg-4 col-md-6">
@@ -186,21 +246,201 @@
                 </div>
             </div>
         </section>
+        <section class="page-section" id="service-system">
+            <div class="container px-4 px-lg-5">
+                <div class="text-center mb-5">
+                    <h2 class="text-uppercase">服务体系</h2>
+                    <p class="text-muted">贯穿策略规划、背景升级、笔面试训练与岗位联动的全链路服务，交付可落地的求职成果。</p>
+                </div>
+                <div class="service-tabs" role="tablist">
+                    <button class="service-tab active" data-target="tab-strategy" role="tab" aria-selected="true">
+                        <span class="tab-label">策略与路径</span>
+                        <span class="tab-desc">职位地图 · 节奏控盘 · 行业赛道</span>
+                    </button>
+                    <button class="service-tab" data-target="tab-profile" role="tab" aria-selected="false">
+                        <span class="tab-label">背景与简历</span>
+                        <span class="tab-desc">项目组合 · 多语简历 · 亮点提炼</span>
+                    </button>
+                    <button class="service-tab" data-target="tab-interview" role="tab" aria-selected="false">
+                        <span class="tab-label">笔试/面试</span>
+                        <span class="tab-desc">网测实战 · 行为/案例 · 技术深潜</span>
+                    </button>
+                    <button class="service-tab" data-target="tab-offer" role="tab" aria-selected="false">
+                        <span class="tab-label">资源与转化</span>
+                        <span class="tab-desc">岗位联动 · 内推资源 · Offer 兑现</span>
+                    </button>
+                </div>
+                <div class="service-panels">
+                    <div class="service-panel active" id="tab-strategy" role="tabpanel">
+                        <div class="row g-4 align-items-stretch">
+                            <div class="col-lg-6">
+                                <div class="panel-card gradient">
+                                    <div class="panel-icon"><i class="bi bi-compass"></i></div>
+                                    <h3 class="h4">定制职业策略与时间线</h3>
+                                    <p class="mb-3">根据目标地区与行业（咨询、科技、投行、制造等）绘制职位地图，反推时间线与突破点，确保每个节点可执行。</p>
+                                    <ul class="panel-list">
+                                        <li>春秋招节奏、提前批与回流路径一目了然</li>
+                                        <li>并行规划跨区域机会，规避签证与窗口期风险</li>
+                                        <li>以成果为导向的周/月度里程碑跟进</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="panel-card muted">
+                                    <div class="badge badge-soft">Executive Coach</div>
+                                    <h4 class="fw-bold">行业导师陪跑</h4>
+                                    <p class="mb-3">核心导师来自顶级咨询、四大、FAANG、制造龙头，提供一对一策略审阅与决策陪伴。</p>
+                                    <div class="mini-grid">
+                                        <div>
+                                            <div class="mini-label">跨文化沟通</div>
+                                            <p class="mini-text">覆盖中/英/日三语场景，保障面试与商务表达自如。</p>
+                                        </div>
+                                        <div>
+                                            <div class="mini-label">赛道深潜</div>
+                                            <p class="mini-text">行业洞察、案例框架与项目亮点拆解，贴合目标岗位。</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="service-panel" id="tab-profile" role="tabpanel">
+                        <div class="row g-4 align-items-stretch">
+                            <div class="col-lg-5">
+                                <div class="panel-card gradient">
+                                    <div class="panel-icon"><i class="bi bi-clipboard-check"></i></div>
+                                    <h3 class="h4">背景与简历升级</h3>
+                                    <p class="mb-3">多语言简历精修（中/英/日），突出量化成果与领导力，匹配目标 JD 的关键词与故事线。</p>
+                                    <ul class="panel-list">
+                                        <li>项目组合设计，突出跨区域与跨职能的竞争力</li>
+                                        <li>实习与科研经历共创，打造可验证的成果陈述</li>
+                                        <li>作品集/案例集包装，提升面试中的说服力</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-lg-7">
+                                <div class="panel-card muted">
+                                    <div class="badge badge-soft">Portfolio Ready</div>
+                                    <div class="step-grid">
+                                        <div class="step-item">
+                                            <div class="step-index">01</div>
+                                            <div>
+                                                <div class="step-title">Resume Lab</div>
+                                                <p class="mini-text">从 STAR 到咨询式结构，提炼数字化结果与行业洞察。</p>
+                                            </div>
+                                        </div>
+                                        <div class="step-item">
+                                            <div class="step-index">02</div>
+                                            <div>
+                                                <div class="step-title">Project Sprint</div>
+                                                <p class="mini-text">设计案例/项目冲刺，辅以导师点评与复盘，确保成色。</p>
+                                            </div>
+                                        </div>
+                                        <div class="step-item">
+                                            <div class="step-index">03</div>
+                                            <div>
+                                                <div class="step-title">Storytelling</div>
+                                                <p class="mini-text">构建个人品牌与差异化卖点，形成一套高分叙事模板。</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="service-panel" id="tab-interview" role="tabpanel">
+                        <div class="row g-4 align-items-stretch">
+                            <div class="col-lg-6">
+                                <div class="panel-card gradient">
+                                    <div class="panel-icon"><i class="bi bi-chat-dots"></i></div>
+                                    <h3 class="h4">笔试/面试闭环训练</h3>
+                                    <p class="mb-3">笔试、网测、案例面、技术面分阶段训练，提供实时反馈、录屏复盘与改进清单。</p>
+                                    <ul class="panel-list">
+                                        <li>案例面/结构化行为面试多轮模拟</li>
+                                        <li>技术 & 系统设计题库定制打磨</li>
+                                        <li>场景化沟通与多语言口语强化</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="panel-card muted">
+                                    <div class="badge badge-soft">Real-time Coach</div>
+                                    <div class="mini-grid">
+                                        <div>
+                                            <div class="mini-label">Assessment Lab</div>
+                                            <p class="mini-text">网测/笔试专项题组与评分标准，缩短准备周期。</p>
+                                        </div>
+                                        <div>
+                                            <div class="mini-label">Interview Studio</div>
+                                            <p class="mini-text">仿真录制与逐帧点评，迭代表达、逻辑与肢体语言。</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="service-panel" id="tab-offer" role="tabpanel">
+                        <div class="row g-4 align-items-stretch">
+                            <div class="col-lg-5">
+                                <div class="panel-card gradient">
+                                    <div class="panel-icon"><i class="bi bi-link-45deg"></i></div>
+                                    <h3 class="h4">资源与岗位联动</h3>
+                                    <p class="mb-3">港新日美及中国大陆多渠道职位推荐，结合内推、校招与社招窗口，提升转化率。</p>
+                                    <ul class="panel-list">
+                                        <li>目标公司内推、在职导师点评与沟通策略</li>
+                                        <li>Offer 选择与谈判建议，匹配签证/区域要求</li>
+                                        <li>入职前准备与前 90 天辅导，确保顺利落地</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-lg-7">
+                                <div class="panel-card muted">
+                                    <div class="badge badge-soft">Conversion First</div>
+                                    <div class="step-grid">
+                                        <div class="step-item">
+                                            <div class="step-index">01</div>
+                                            <div>
+                                                <div class="step-title">职位雷达</div>
+                                                <p class="mini-text">实时跟进职位池，优先匹配高转化岗位与窗口。</p>
+                                            </div>
+                                        </div>
+                                        <div class="step-item">
+                                            <div class="step-index">02</div>
+                                            <div>
+                                                <div class="step-title">联动面试官</div>
+                                                <p class="mini-text">多角色模拟（HR/面试官/合伙人），提前校准答案。</p>
+                                            </div>
+                                        </div>
+                                        <div class="step-item">
+                                            <div class="step-index">03</div>
+                                            <div>
+                                                <div class="step-title">落地陪伴</div>
+                                                <p class="mini-text">签约、签证、迁移与入职仪式感，全流程有回应。</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
         <!-- Portfolio-->
         <section class="page-section" id="portfolio">
             <div class="container px-4 px-lg-5">
                 <div class="text-center mb-5">
                     <h2 class="text-uppercase">讲师团队</h2>
-                    <p class="text-muted">六位行业导师，覆盖 AI、咨询、财务、数字化与留学求职核心赛道。</p>
+                    <p class="text-muted">六位行业导师，覆盖 AI、咨询、财务、数字化等核心求职赛道。</p>
                 </div>
                 <div class="row g-4">
                     <div class="col-lg-4 col-md-6">
                         <div class="mentor-card h-100">
                             <img class="mentor-photo" src="assets/img/portfolio/fullsize/wu.png" alt="吴老师" />
                             <div class="mentor-content">
-                                <div class="mentor-tag">AI / LLM / 名校申请</div>
+                                <div class="mentor-tag">AI / LLM / 技术求职</div>
                                 <h3 class="mentor-name">Cici老师</h3>
-                                <p class="mentor-brief">Cici老师，东京大学计算机博士、知名日企在职工程师，专精 AI 与大语言模型研发。辅导计算机与 AI方向 求职，帮助多名学生成功申请日本Top3大学。</p>
+                                <p class="mentor-brief">Cici老师，东京大学计算机博士、知名日企在职工程师，专精 AI 与大语言模型研发。辅导计算机与 AI 方向求职，深度训练算法、系统设计与技术面试表现。</p>
                                 <button class="btn btn-outline-light btn-sm" data-bs-toggle="modal" data-bs-target="#mentorWu">查看详细</button>
                             </div>
                         </div>
@@ -266,11 +506,89 @@
                 </div>
             </div>
         </section>
+        <!-- Offer showcase -->
+        <section class="page-section bg-light offer-section" id="offers">
+            <div class="container px-4 px-lg-5">
+                <div class="text-center mb-5">
+                    <h2 class="text-uppercase">Offer 战绩</h2>
+                    <p class="text-muted">精选近期待录，展示学员通往世界顶尖名企与学府的高光时刻。</p>
+                </div>
+                <div id="offerCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#offerCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Offer 1"></button>
+                        <button type="button" data-bs-target="#offerCarousel" data-bs-slide-to="1" aria-label="Offer 2"></button>
+                        <button type="button" data-bs-target="#offerCarousel" data-bs-slide-to="2" aria-label="Offer 3"></button>
+                        <button type="button" data-bs-target="#offerCarousel" data-bs-slide-to="3" aria-label="Offer 4"></button>
+                        <button type="button" data-bs-target="#offerCarousel" data-bs-slide-to="4" aria-label="Offer 5"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="offer-card">
+                                <div class="offer-media" style="background-image: url('assets/1.jpg');"><a href="assets/1.jpg" target="_blank" aria-label="查看大图"></a></div>
+                                <div class="offer-content">
+                                    <div class="offer-pill">创意品牌 · 生活方式</div>
+                                    <h3 class="offer-title">生活方式品牌创意设计 Offer</h3>
+                                    <p class="offer-meta">围绕服饰周边与复古器物的陈列企划，完成品牌故事线与视觉体验落地。</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="offer-card">
+                                <div class="offer-media" style="background-image: url('assets/2.jpg');"><a href="assets/2.jpg" target="_blank" aria-label="查看大图"></a></div>
+                                <div class="offer-content">
+                                    <div class="offer-pill">文创策划 · 品牌语调</div>
+                                    <h3 class="offer-title">文创品牌内容策划 Offer</h3>
+                                    <p class="offer-meta">以手账与宣言口号为核心，完成品牌调性梳理、物料设计与线下陈列。</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="offer-card">
+                                <div class="offer-media" style="background-image: url('assets/3.jpg');"><a href="assets/3.jpg" target="_blank" aria-label="查看大图"></a></div>
+                                <div class="offer-content">
+                                    <div class="offer-pill">影像制作 · 复古器材</div>
+                                    <h3 class="offer-title">独立影像工作室制片 Offer</h3>
+                                    <p class="offer-meta">围绕多机位与胶片设备管理，完成拍摄流程优化与影像资产数字化整理。</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="offer-card">
+                                <div class="offer-media" style="background-image: url('assets/4.jpg');"><a href="assets/4.jpg" target="_blank" aria-label="查看大图"></a></div>
+                                <div class="offer-content">
+                                    <div class="offer-pill">精品餐饮 · 供应链</div>
+                                    <h3 class="offer-title">精品餐饮后厨运营 Offer</h3>
+                                    <p class="offer-meta">以刀具、香料与备料流程为主线，搭建标准化清单并优化后厨协作效率。</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="offer-card">
+                                <div class="offer-media" style="background-image: url('assets/5.jpg');"><a href="assets/5.jpg" target="_blank" aria-label="查看大图"></a></div>
+                                <div class="offer-content">
+                                    <div class="offer-pill">产品运营 · 手作工坊</div>
+                                    <h3 class="offer-title">手作工坊产品运营 Offer</h3>
+                                    <p class="offer-meta">围绕刻度尺与文创笔组合，完成物料定价、供应对接与体验工作坊策划。</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#offerCarousel" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#offerCarousel" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </section>
         <!-- Call to action-->
         <section class="page-section bg-dark text-white cta-compact">
             <div class="container px-4 px-lg-5 text-center">
                 <h2 class="mb-4">免费咨询</h2>
-                <p class="text-white-75 mb-4">与专业顾问沟通，规划留学与就业路径。</p>
+                <p class="text-white-75 mb-4">与专业顾问沟通，规划求职与职业发展路径。</p>
                 
             </div>
         </section>
@@ -307,13 +625,12 @@
                     <div class="modal-body">
                         <p>Cici老师毕业于东京大学计算机科学博士项目，现任职于日本某知名企业核心研发部门，长期从事大语言模型（LLM）、人工智能、机器学习及核心系统开发等方向的研究与工程实践，拥有扎实的技术功底与丰富的项目经验。</p>
                         <p>作为企业工程师，Cici老师多次参与实习生与应届生的技术面试流程，熟悉日本 IT 企业的筛选机制、面试问法与技术考察重点，能够根据学生背景提供精准的求职辅导，包括项目亮点提炼、技术栈梳理、算法基础强化与日式表达优化。</p>
-                        <p>在留学申请方面，Cici老师已成功指导多名学生获得东京大学、早稲田大学等顶尖名校的计算机和信息类专业录取，擅长帮助学生构建研究计划书、明确研究方向、优化技术逻辑，并在套磁与申请策略方面经验丰富。</p>
                         <h6 class="mt-4">适合学生方向</h6>
                         <ul class="mb-0">
-                            <li>计算机 / AI / LLM / 信息工程留学</li>
                             <li>日本 IT 求职辅导（笔试 / 机试 / 技术面）</li>
-                            <li>东京大学、早稲田等名校申请支持</li>
+                            <li>算法与系统设计专项模拟、项目亮点提炼</li>
                             <li>技术研究与项目背景提升</li>
+                            <li>跨文化沟通与日语/英语技术表达优化</li>
                         </ul>
                     </div>
                 </div>
@@ -358,7 +675,7 @@
                             <li>结构化逻辑思维与商业分析能力提升</li>
                             <li>简历项目亮点提炼与职业路径规划</li>
                             <li>麦肯锡 / BCG / 贝恩等顶尖咨询求职策略</li>
-                            <li>商学院 / 管理类专业留学申请指导</li>
+                            <li>商学院 / 管理类职业路径规划与竞争力提升</li>
                         </ul>
                         <p class="mb-0">他的学生已成功进入 McKinsey、BCG、Bain 及日本与中国的领先战略咨询机构和商学院。</p>
                     </div>
