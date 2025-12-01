@@ -11667,6 +11667,39 @@ header.masthead h1, header.masthead .h1 {
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
 }
 
+.timeline-columns.timeline-grid-2 {
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+.timeline-group {
+  margin-top: 10px;
+  padding: 14px;
+  background: linear-gradient(120deg, rgba(244, 98, 58, 0.05), rgba(255, 255, 255, 0.35));
+  border: 1px solid rgba(244, 98, 58, 0.08);
+  border-radius: 16px;
+}
+
+.group-label {
+  font-weight: 800;
+  color: #111827;
+  font-size: 0.95rem;
+  letter-spacing: 0.02em;
+  margin-bottom: 10px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.group-label::before {
+  content: '';
+  display: inline-flex;
+  width: 12px;
+  height: 12px;
+  border-radius: 8px;
+  background: linear-gradient(135deg, #f4623a, #f78f1e);
+  box-shadow: 0 0 0 6px rgba(244, 98, 58, 0.12);
+}
+
 .timeline-block {
   background: linear-gradient(165deg, #fff, #fff7f2);
   border: 1px solid rgba(244, 98, 58, 0.15);
