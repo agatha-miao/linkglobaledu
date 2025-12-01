@@ -11462,7 +11462,7 @@ header.masthead h1, header.masthead .h1 {
 .offer-media {
   position: relative;
   width: 100%;
-  padding-top: 64%;
+  padding-top: 78%;
   border-radius: 18px;
   background-size: cover;
   background-position: center;
@@ -11513,6 +11513,10 @@ header.masthead h1, header.masthead .h1 {
   color: #0f1a2c;
   letter-spacing: 0.01em;
   font-size: 1.26rem;
+  margin-bottom: 10px;
+  font-weight: 800;
+  color: #0f1a2c;
+  letter-spacing: 0.01em;
 }
 
 .offer-meta {
@@ -11729,5 +11733,6 @@ header.masthead h1, header.masthead .h1 {
 
   .panel-tag {
     font-size: 0.95rem;
+    font-size: 1.2rem;
   }
 }
