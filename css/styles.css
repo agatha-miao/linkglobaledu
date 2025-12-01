@@ -11449,20 +11449,13 @@ header.masthead h1, header.masthead .h1 {
 
 .offer-card {
   display: grid;
-  grid-template-columns: minmax(340px, 52%) 1fr;
-  gap: clamp(24px, 3.5vw, 36px);
-  padding: clamp(26px, 4vw, 36px);
+  grid-template-columns: minmax(320px, 45%) 1fr;
+  gap: clamp(22px, 3vw, 32px);
+  padding: clamp(24px, 3.5vw, 34px);
   background: linear-gradient(135deg, #ffffff, #f7f9fc);
   border-radius: 22px;
   border: 1px solid rgba(12, 16, 24, 0.06);
   box-shadow: 0 20px 52px rgba(0, 0, 0, 0.08);
-  grid-template-columns: minmax(260px, 38%) 1fr;
-  gap: clamp(24px, 4vw, 36px);
-  padding: clamp(20px, 4vw, 28px);
-  background: linear-gradient(135deg, #ffffff, #f7f9fc);
-  border-radius: 22px;
-  border: 1px solid rgba(12, 16, 24, 0.06);
-  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.08);
   align-items: center;
 }
 
@@ -11470,7 +11463,6 @@ header.masthead h1, header.masthead .h1 {
   position: relative;
   width: 100%;
   padding-top: 78%;
-  padding-top: 70%;
   border-radius: 18px;
   background-size: cover;
   background-position: center;
@@ -11532,7 +11524,6 @@ header.masthead h1, header.masthead .h1 {
   color: #4a5568;
   line-height: 1.7;
   font-size: 0.9rem;
-  font-size: 0.98rem;
 }
 
 .offer-section .carousel-indicators [data-bs-target] {
@@ -11572,8 +11563,7 @@ header.masthead h1, header.masthead .h1 {
   }
 
   .offer-media {
-    padding-top: 72%;
-    padding-top: 52%;
+    padding-top: 68%;
   }
 }
 
@@ -11671,6 +11661,47 @@ header.masthead h1, header.masthead .h1 {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   gap: 16px;
+}
+
+.timeline-columns.timeline-grid-4 {
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.timeline-columns.timeline-grid-3 {
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+}
+
+.timeline-columns.timeline-grid-2 {
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+.timeline-group {
+  margin-top: 10px;
+  padding: 14px;
+  background: linear-gradient(120deg, rgba(244, 98, 58, 0.05), rgba(255, 255, 255, 0.35));
+  border: 1px solid rgba(244, 98, 58, 0.08);
+  border-radius: 16px;
+}
+
+.group-label {
+  font-weight: 800;
+  color: #111827;
+  font-size: 0.95rem;
+  letter-spacing: 0.02em;
+  margin-bottom: 10px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.group-label::before {
+  content: '';
+  display: inline-flex;
+  width: 12px;
+  height: 12px;
+  border-radius: 8px;
+  background: linear-gradient(135deg, #f4623a, #f78f1e);
+  box-shadow: 0 0 0 6px rgba(244, 98, 58, 0.12);
 }
 
 .timeline-block {
