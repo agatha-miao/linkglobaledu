@@ -32,20 +32,18 @@
                 <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
                 <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
                 <li class="nav-item"><a class="nav-link" href="#portfolio">Mentor Team</a></li>
+                <li class="nav-item"><a class="nav-link" href="#offers">Offer Showcase</a></li>
                 <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-
-<li class="nav-item dropdown">
-  <a class="nav-link dropdown-toggle" href="#" id="langDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-    Language
-  </a>
-<ul class="dropdown-menu">
-    <li><a class="dropdown-item" href="index.html">English</a></li>
-    <li><a class="dropdown-item" href="index_zh.html">中文</a></li>
-    <li><a class="dropdown-item" href="index_jp.html">日本語</a></li>
-</ul>
-
-
-</li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="langDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Language
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="langDropdown">
+                        <li><a class="dropdown-item" data-lang="en" href="#" onclick="setLang('en')">English</a></li>
+                        <li><a class="dropdown-item" data-lang="zh" href="#" onclick="setLang('zh')">中文</a></li>
+                        <li><a class="dropdown-item" data-lang="ja" href="#" onclick="setLang('ja')">日本語</a></li>
+                    </ul>
+                </li>
 
 
 
@@ -58,12 +56,15 @@
             <div class="container px-4 px-lg-5 h-100">
                 <div class="row gx-4 gx-lg-5 h-100 align-items-center justify-content-center text-center">
                     <div class="col-lg-8 align-self-end">
-                        <h1 id="hero-title" class="text-white font-weight-bold">LinkGlobal Education — Your Asia Career &amp; Admissions Partner</h1>
+                        <h1 id="hero-title" class="text-white font-weight-bold">LinkGlobal — Global Career Platform</h1>
                         <hr class="divider" />
                     </div>
                     <div class="col-lg-8 align-self-baseline">
-                        <p id="hero-subtitle" class="text-white-75 mb-5">End-to-end support for Japanese graduate admissions, Japan/Hong Kong/Singapore careers, and return-offer pathways — crafted by mentors from world-class companies.</p>
-                        <a id="hero-button" class="btn btn-primary btn-xl" href="#contact">Talk to Us</a>
+                        <p id="hero-subtitle" class="text-white-75 mb-4">Career acceleration across Japan, Hong Kong, Singapore, Mainland China, and return pathways — powered by mentors from world-class consulting, tech, and finance firms.</p>
+                        <div class="d-flex justify-content-center gap-3 flex-wrap">
+                            <a id="hero-button" class="btn btn-primary btn-xl" href="#contact">Talk to Us</a>
+                            <a class="btn btn-outline-light btn-xl" href="study_en.html">View Study Services</a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -73,11 +74,11 @@
             <div class="container px-4 px-lg-5">
                 <div class="row gx-4 gx-lg-5 justify-content-center">
                     <div class="col-lg-8 text-center">
-                        <h2 class="text-white mt-0">About LinkGlobal Education</h2>
+                        <h2 class="text-white mt-0">About LinkGlobal｜Career-First</h2>
                         <hr class="divider divider-light" />
-                        <p class="text-white-75 mb-3">We specialize in Japanese graduate admissions, job coaching for Japan, Hong Kong, and Singapore, plus guidance for students returning home. Our advisors design tailored study and career roadmaps for every student.</p>
-                        <p class="text-white fw-semibold mb-4">Rooted in Asia, reaching the world — we stand by every young talent to explore dreams and possibilities, and help them take the first brave step toward the future.</p>
-                        <a class="btn btn-light btn-xl" href="#services">Begin your future</a>
+                        <p class="text-white-75 mb-3">We deliver high-touch career coaching for Japan, Hong Kong, Singapore, Mainland China, and cross-region moves. Senior mentors co-create roadmaps that pair industry know-how with execution.</p>
+                        <p class="text-white fw-semibold mb-4">Rooted in Asia, facing the world. We build milestones, practice interviews, and fast-track you into top companies.</p>
+                        <a class="btn btn-light btn-xl" href="#services">Start your journey</a>
                     </div>
                 </div>
             </div>
@@ -85,79 +86,311 @@
         <!-- Services-->
         <section class="page-section" id="services">
             <div class="container px-4 px-lg-5">
-                <h2 class="text-center mt-0">Premier Admissions &amp; Career Services</h2>
+                <h2 class="text-center mt-0">End-to-End Career Services</h2>
                 <hr class="divider" />
                 <div class="row gx-4 gx-lg-5 gy-4">
                     <div class="col-lg-4 col-md-6">
                         <div class="service-card h-100">
                             <div class="service-icon mb-3"><i class="bi-mortarboard"></i></div>
-                            <h3 id="service1" class="h4">Comprehensive Japan Admissions</h3>
+                            <h3 id="service1" class="h4">Japan Career Coaching</h3>
                             <ul class="service-list">
-                                <li>Full pathway for bachelor’s, master’s, and PhD: JLPT tutoring, EJU arts/science prep, SOPs, and campus exam coaching</li>
-                                <li>Lab research mapping, research plan editing, interview and written test drills</li>
-                                <li>SGU (Super Global University) English-track applications and coursework support across STEM, liberal arts, and arts</li>
+                                <li>Bilingual CV/ES polish and story building</li>
+                                <li>SPI, online tests, group discussions, and technical interview training</li>
+                                <li>Industry-specific strategies with referral support</li>
                             </ul>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6">
                         <div class="service-card h-100">
                             <div class="service-icon mb-3"><i class="bi-building"></i></div>
-                            <h3 id="service2" class="h4">Japan Career Coaching</h3>
+                            <h3 id="service2" class="h4">Hong Kong / Singapore Careers</h3>
                             <ul class="service-list">
-                                <li>Bilingual resume/ES polishing and project storytelling</li>
-                                <li>SPI, online assessments, group discussion, and technical interview prep</li>
-                                <li>Targeted industry strategies with referral opportunities</li>
+                                <li>English/Cantonese resume upgrades, case interviews, and financial modeling drills</li>
+                                <li>Application pacing for finance, consulting, product, and data roles</li>
+                                <li>Mentor-led mock interviews and cross-region offer strategy</li>
                             </ul>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6">
                         <div class="service-card h-100">
                             <div class="service-icon mb-3"><i class="bi-journal-richtext"></i></div>
-                            <h3 class="h4">Hong Kong Admissions Strategy</h3>
+                            <h3 class="h4">Mainland China Careers</h3>
                             <ul class="service-list">
-                                <li>Master’s/PhD and taught-track applications across business, STEM, and humanities with timeline design</li>
-                                <li>PS/Resume/Recommendations refinement plus research and internship profile boosting</li>
-                                <li>Interview simulations and fit checks for mixed coursework/research programmes</li>
+                                <li>Campus and lateral hiring roadmap, region and role matching</li>
+                                <li>STAR-based storytelling and multilingual interview coaching</li>
+                                <li>Co-created upskilling plan across finance, consulting, product, and AI</li>
                             </ul>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6">
                         <div class="service-card h-100">
                             <div class="service-icon mb-3"><i class="bi-briefcase"></i></div>
-                            <h3 id="service3" class="h4">Hong Kong Career Coaching</h3>
+                            <h3 id="service3" class="h4">North America / Return Offers</h3>
                             <ul class="service-list">
-                                <li>English/Cantonese bilingual strategies for banking, consulting, Big 4, and tech roles</li>
-                                <li>Case interviews, financial modelling, and product/data interview drills</li>
-                                <li>HK–Singapore coordinated job plans and cross-region offer strategy</li>
+                                <li>Localized resumes and cultural nuance coaching</li>
+                                <li>Technical and behavioral mock interviews plus system design practice</li>
+                                <li>Return or cross-region strategies with visa considerations</li>
                             </ul>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6">
                         <div class="service-card h-100">
                             <div class="service-icon mb-3"><i class="bi-compass"></i></div>
-                            <h3 class="h4">Singapore Career Coaching</h3>
+                            <h3 class="h4">Career Bootcamps</h3>
                             <ul class="service-list">
-                                <li>Insights on tech/consulting/fintech roles and localised career mapping</li>
-                                <li>English resume upgrades, technical highlights, and cross-cultural communication training</li>
-                                <li>Interview and written-test shadowing for AI/Data/IT positions, plus acceleration plans</li>
+                                <li>Assessment, group interview, case, and technical sprints</li>
+                                <li>Role-specific drills for AI, data, consulting, and product</li>
+                                <li>Coach feedback with one-on-one correction</li>
                             </ul>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6">
                         <div class="service-card h-100">
                             <div class="service-icon mb-3"><i class="bi-rocket"></i></div>
-                            <h3 id="service4" class="h4">Return-to-Home Career Accelerator</h3>
+                            <h3 id="service4" class="h4">Mentor Network Program</h3>
                             <ul class="service-list">
-                                <li>Campus and experienced-hire planning with role and location matching</li>
-                                <li>Multilingual resume and interview coaching with STAR storytelling</li>
-                                <li>Long-term career design supporting transitions and promotions</li>
+                                <li>Senior leaders from Big Four, consulting, tech, and finance</li>
+                                <li>Referral and role-matching opportunities when available</li>
+                                <li>Long-term career planning for both first roles and progression</li>
                             </ul>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <section class="page-section bg-light" id="advantages">
+                <section class="page-section bg-light" id="timeline">
+            <div class="container px-4 px-lg-5">
+                <div class="text-center mb-5">
+                    <h2 class="text-uppercase">Global Career Timeline</h2>
+                    <p class="text-muted">Toggle by region to view key milestones for Undergraduate (Year 1-4) and Graduate (Year 1-2).</p>
+                </div>
+                <div class="timeline-switcher" role="tablist">
+                    <button class="timeline-chip active" data-target="timeline-japan" role="tab" aria-selected="true">Japan</button>
+                    <button class="timeline-chip" data-target="timeline-hk" role="tab" aria-selected="false">Hong Kong</button>
+                    <button class="timeline-chip" data-target="timeline-sg" role="tab" aria-selected="false">Singapore</button>
+                    <button class="timeline-chip" data-target="timeline-cn" role="tab" aria-selected="false">Mainland China</button>
+                    <button class="timeline-chip" data-target="timeline-us" role="tab" aria-selected="false">United States</button>
+                </div>
+                <div class="timeline-panels">
+                    <div class="timeline-panel active" id="timeline-japan" role="tabpanel">
+                        <div class="timeline-panel-header">
+                            <div>
+                                <p class="panel-eyebrow">Japan</p>
+                                <h3 class="panel-title">Japan Careers｜Undergrad &amp; Graduate</h3>
+                            </div>
+                            <span class="panel-tag">Language · ES / SPI · Early Offers</span>
+                        </div>
+                        <div class="timeline-group">
+                            <div class="group-label">Undergraduate</div>
+                            <div class="timeline-columns timeline-grid-4">
+                                <div class="timeline-block">
+                                    <div class="block-label">Year 1</div>
+                                    <p>Build JP/EN language base, join clubs and projects, map Japanese industries and hiring channels.</p>
+                                </div>
+                                <div class="timeline-block">
+                                    <div class="block-label">Year 2</div>
+                                    <p>Polish ES and bilingual resumes, prepare SPI/online tests, secure summer internships or early offers.</p>
+                                </div>
+                                <div class="timeline-block">
+                                    <div class="block-label">Year 3</div>
+                                    <p>Fall applications with group/case interview drills, target consulting, manufacturing, and IT full-time roles.</p>
+                                </div>
+                                <div class="timeline-block">
+                                    <div class="block-label">Year 4</div>
+                                    <p>Pre-onboarding coaching, cross-cultural etiquette, and offer-to-full-time conversion readiness.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="timeline-group">
+                            <div class="group-label">Graduate</div>
+                            <div class="timeline-columns timeline-grid-2">
+                                <div class="timeline-block">
+                                    <div class="block-label">Year 1</div>
+                                    <p>Run research outputs alongside industry cases, land spring/summer internships and pre-offer commitments.</p>
+                                </div>
+                                <div class="timeline-block">
+                                    <div class="block-label">Year 2</div>
+                                    <p>Blend campus and social recruiting with return pathways; sharpen case/tech interviews and cross-cultural communication to onboard smoothly.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="timeline-panel" id="timeline-hk" role="tabpanel">
+                        <div class="timeline-panel-header">
+                            <div>
+                                <p class="panel-eyebrow">Hong Kong</p>
+                                <h3 class="panel-title">Hong Kong Careers｜Undergrad &amp; Graduate</h3>
+                            </div>
+                            <span class="panel-tag">IBD / Consulting · EN/Cantonese · Spring &amp; Summer</span>
+                        </div>
+                        <div class="timeline-group">
+                            <div class="group-label">Undergraduate</div>
+                            <div class="timeline-columns timeline-grid-4">
+                                <div class="timeline-block">
+                                    <div class="block-label">Year 1</div>
+                                    <p>Lay language and finance fundamentals, join clubs/volunteering, and explore finance/consulting tracks.</p>
+                                </div>
+                                <div class="timeline-block">
+                                    <div class="block-label">Year 2</div>
+                                    <p>Balance GPA, clubs, and internships; map spring/summer application cadence and finance/consulting submissions.</p>
+                                </div>
+                                <div class="timeline-block">
+                                    <div class="block-label">Year 3</div>
+                                    <p>Financial modeling, case prep, and EN/Cantonese interviews to win IBD, consulting, and Big Four graduate offers.</p>
+                                </div>
+                                <div class="timeline-block">
+                                    <div class="block-label">Year 4</div>
+                                    <p>Pre-onboarding coaching, cross-market strategy, and soft skills to secure full-time placement.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="timeline-group">
+                            <div class="group-label">Graduate</div>
+                            <div class="timeline-columns timeline-grid-2">
+                                <div class="timeline-block">
+                                    <div class="block-label">Year 1</div>
+                                    <p>Pair quant/finance research projects with internships, plus cross-market networking and mentor referrals.</p>
+                                </div>
+                                <div class="timeline-block">
+                                    <div class="block-label">Year 2</div>
+                                    <p>Mix campus and experienced hiring; manage offer selection/negotiation, onboarding, and cross-market strategies.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="timeline-panel" id="timeline-sg" role="tabpanel">
+                        <div class="timeline-panel-header">
+                            <div>
+                                <p class="panel-eyebrow">Singapore</p>
+                                <h3 class="panel-title">Singapore Careers｜Undergrad &amp; Graduate</h3>
+                            </div>
+                            <span class="panel-tag">Tech / Data · English · Campus &amp; Lateral</span>
+                        </div>
+                        <div class="timeline-group">
+                            <div class="group-label">Undergraduate</div>
+                            <div class="timeline-columns timeline-grid-4">
+                                <div class="timeline-block">
+                                    <div class="block-label">Year 1</div>
+                                    <p>Strengthen English fluency and tech/data fundamentals; join clubs and hackathons; map local hiring rhythms.</p>
+                                </div>
+                                <div class="timeline-block">
+                                    <div class="block-label">Year 2</div>
+                                    <p>Upgrade English resumes and tech storytelling; target tech/data summer internships with mentor feedback.</p>
+                                </div>
+                                <div class="timeline-block">
+                                    <div class="block-label">Year 3</div>
+                                    <p>Run campus + lateral applications; simulate system design and behavioral interviews; build local references.</p>
+                                </div>
+                                <div class="timeline-block">
+                                    <div class="block-label">Year 4</div>
+                                    <p>Convert offers with work-pass guidance, finalize onboarding, and deepen Singapore networks and referrals.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="timeline-group">
+                            <div class="group-label">Graduate</div>
+                            <div class="timeline-columns timeline-grid-2">
+                                <div class="timeline-block">
+                                    <div class="block-label">Year 1</div>
+                                    <p>Package research with product/data casework, pair with internships, and strengthen global-team communication.</p>
+                                </div>
+                                <div class="timeline-block">
+                                    <div class="block-label">Year 2</div>
+                                    <p>Guide visas and onboarding; juggle campus, lateral, and return pathways to secure conversions.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="timeline-panel" id="timeline-cn" role="tabpanel">
+                        <div class="timeline-panel-header">
+                            <div>
+                                <p class="panel-eyebrow">Mainland China</p>
+                                <h3 class="panel-title">Mainland China Careers｜Undergrad &amp; Graduate</h3>
+                            </div>
+                            <span class="panel-tag">Early Batches · Intern-to-FT · Fall Recruiting</span>
+                        </div>
+                        <div class="timeline-group">
+                            <div class="group-label">Undergraduate</div>
+                            <div class="timeline-columns timeline-grid-4">
+                                <div class="timeline-block">
+                                    <div class="block-label">Year 1</div>
+                                    <p>Identify target industries, stack club and competition experiences, and build a resume foundation.</p>
+                                </div>
+                                <div class="timeline-block">
+                                    <div class="block-label">Year 2</div>
+                                    <p>Deliver projects/competitions, train for early-batch tests/interviews, and quantify achievements.</p>
+                                </div>
+                                <div class="timeline-block">
+                                    <div class="block-label">Year 3</div>
+                                    <p>Sprint summer and early offers; manage applications, tests, and group/tech/case interviews with discipline.</p>
+                                </div>
+                                <div class="timeline-block">
+                                    <div class="block-label">Year 4</div>
+                                    <p>Run full fall recruiting across applications, tests, group, tech, and case interviews to secure conversion or regional options.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="timeline-group">
+                            <div class="group-label">Graduate</div>
+                            <div class="timeline-columns timeline-grid-2">
+                                <div class="timeline-block">
+                                    <div class="block-label">Year 1</div>
+                                    <p>Balance research and internships; craft campus strategy by industry; sharpen interviews and storytelling.</p>
+                                </div>
+                                <div class="timeline-block">
+                                    <div class="block-label">Year 2</div>
+                                    <p>Lock industry/region choices, negotiate offers, onboard smoothly, and keep return or cross-region options open.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="timeline-panel" id="timeline-us" role="tabpanel">
+                        <div class="timeline-panel-header">
+                            <div>
+                                <p class="panel-eyebrow">United States</p>
+                                <h3 class="panel-title">U.S. Careers｜Undergrad &amp; Graduate</h3>
+                            </div>
+                            <span class="panel-tag">OA / Behavioral · Return Offers · Visa Strategy</span>
+                        </div>
+                        <div class="timeline-group">
+                            <div class="group-label">Undergraduate</div>
+                            <div class="timeline-columns timeline-grid-4">
+                                <div class="timeline-block">
+                                    <div class="block-label">Year 1</div>
+                                    <p>Core coursework and clubs, building coding, case, and communication foundations.</p>
+                                </div>
+                                <div class="timeline-block">
+                                    <div class="block-label">Year 2</div>
+                                    <p>Structured resume and career exploration; build early internship pipelines and alumni outreach.</p>
+                                </div>
+                                <div class="timeline-block">
+                                    <div class="block-label">Year 3</div>
+                                    <p>OA, behavioral, and system design prep in parallel to secure summer return offers.</p>
+                                </div>
+                                <div class="timeline-block">
+                                    <div class="block-label">Year 4</div>
+                                    <p>Manage fall recruiting cadence, deepen system design/product cases, and weigh return vs. local full-time options.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="timeline-group">
+                            <div class="group-label">Graduate</div>
+                            <div class="timeline-columns timeline-grid-2">
+                                <div class="timeline-block">
+                                    <div class="block-label">Year 1</div>
+                                    <p>Combine projects with faculty referrals; apply across campus and lateral channels; deepen interview performance.</p>
+                                </div>
+                                <div class="timeline-block">
+                                    <div class="block-label">Year 2</div>
+                                    <p>Plan cross-region offer strategies and visa pathways; choose U.S. roles or return options and finalize onboarding.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+<section class="page-section bg-light" id="advantages">
             <div class="container px-4 px-lg-5">
                 <div class="text-center mb-5">
                     <h2 class="text-uppercase">Why We Stand Out</h2>
@@ -264,15 +497,94 @@
                     </div>
                 </div>
                 <div class="text-center mt-4">
-                    <p class="text-muted mb-0">Beyond these mentors, we partner with top instructors across industries and universities to guide your admissions and career success.</p>
+                    <p class="text-muted mb-0">Beyond these mentors, we partner with top instructors across industries and universities to guide your career breakthroughs.</p>
                 </div>
             </div>
         </section>
+        <!-- Offer showcase -->
+        <section class="page-section bg-light offer-section" id="offers">
+            <div class="container px-4 px-lg-5">
+                <div class="text-center mb-5">
+                    <h2 class="text-uppercase">Offer Showcase</h2>
+                    <p class="text-muted">Recent highlights from our mentees landing roles at leading firms worldwide.</p>
+                </div>
+                <div id="offerCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#offerCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Offer 1"></button>
+                        <button type="button" data-bs-target="#offerCarousel" data-bs-slide-to="1" aria-label="Offer 2"></button>
+                        <button type="button" data-bs-target="#offerCarousel" data-bs-slide-to="2" aria-label="Offer 3"></button>
+                        <button type="button" data-bs-target="#offerCarousel" data-bs-slide-to="3" aria-label="Offer 4"></button>
+                        <button type="button" data-bs-target="#offerCarousel" data-bs-slide-to="4" aria-label="Offer 5"></button>
+                    </div>
+                                        <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="offer-card">
+                                <div class="offer-media" style="background-image: url('assets/1.jpg');"><a href="assets/1.jpg" target="_blank" aria-label="View full image"></a></div>
+                                <div class="offer-content">
+                                    <div class="offer-pill">Strategy Consulting · Japan</div>
+                                    <h3 class="offer-title">Japan Top Consulting Summer Offer</h3>
+                                    <p class="offer-meta">Bilingual case interview and online test sprint, securing a summer internship with early conversion.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="offer-card">
+                                <div class="offer-media" style="background-image: url('assets/2.jpg');"><a href="assets/2.jpg" target="_blank" aria-label="View full image"></a></div>
+                                <div class="offer-content">
+                                    <div class="offer-pill">Investment Banking · Hong Kong</div>
+                                    <h3 class="offer-title">Hong Kong Investment Banking Summer Analyst Offer</h3>
+                                    <p class="offer-meta">Financial modeling and case drills leading to spring/summer internships and a graduate pipeline.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="offer-card">
+                                <div class="offer-media" style="background-image: url('assets/3.jpg');"><a href="assets/3.jpg" target="_blank" aria-label="View full image"></a></div>
+                                <div class="offer-content">
+                                    <div class="offer-pill">Tech Product · Singapore</div>
+                                    <h3 class="offer-title">Singapore Tech Product Operations Offer</h3>
+                                    <p class="offer-meta">Drove cross-functional launches and data dashboards, leveraging local referrals to secure the offer.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="offer-card">
+                                <div class="offer-media" style="background-image: url('assets/4.jpg');"><a href="assets/4.jpg" target="_blank" aria-label="View full image"></a></div>
+                                <div class="offer-content">
+                                    <div class="offer-pill">Big Four M&amp;A · Mainland China</div>
+                                    <h3 class="offer-title">Mainland China Big Four M&amp;A Consulting Offer</h3>
+                                    <p class="offer-meta">Delivered due diligence, valuation, and audit coordination to clear early batches and convert.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="offer-card">
+                                <div class="offer-media" style="background-image: url('assets/5.jpg');"><a href="assets/5.jpg" target="_blank" aria-label="View full image"></a></div>
+                                <div class="offer-content">
+                                    <div class="offer-pill">Data Analytics · United States</div>
+                                    <h3 class="offer-title">U.S. Tech Data Analytics Offer</h3>
+                                    <p class="offer-meta">Built data pipelines and business metrics narratives; passed OA/behavioral with a visa-ready plan to win the return.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#offerCarousel" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#offerCarousel" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </section>
+
         <!-- Call to action-->
         <section class="page-section bg-dark text-white cta-compact">
             <div class="container px-4 px-lg-5 text-center">
                 <h2 class="mb-4">Start Your Free Consultation</h2>
-                <p class="text-white-75 mb-4">Connect with our advisors to plan your studies or career move.</p>
+                <p class="text-white-75 mb-4">Connect with our advisors to map your next role, region, and interview plan.</p>
                 <a class="btn btn-light btn-xl" href="#contact">Talk to Us</a>
             </div>
         </section>
