@@ -56,50 +56,87 @@ window.addEventListener('DOMContentLoaded', event => {
         elements: '#portfolio a.portfolio-box'
     });
 
-});
-function setLang(lang) {
-    localStorage.setItem("site_lang", lang);
+    // Service system tabs
+    const serviceTabs = document.querySelectorAll('.service-tab');
+    const servicePanels = document.querySelectorAll('.service-panel');
 
-    // 移除旧的高亮
-    document.querySelectorAll(".dropdown-item").forEach(i => {
-        i.classList.remove("active-lang");
+    serviceTabs.forEach(tab => {
+        tab.addEventListener('click', () => {
+            const targetId = tab.getAttribute('data-target');
+            const targetPanel = document.getElementById(targetId);
+
+            serviceTabs.forEach(btn => {
+                btn.classList.remove('active');
+                btn.setAttribute('aria-selected', 'false');
+            });
+
+            servicePanels.forEach(panel => panel.classList.remove('active'));
+
+            tab.classList.add('active');
+            tab.setAttribute('aria-selected', 'true');
+            if (targetPanel) {
+                targetPanel.classList.add('active');
+            }
+        });
     });
 
-    // 给当前语言加高亮
-    event.target.classList.add("active-lang");
+    // Timeline chips interaction
+    const timelineChips = document.querySelectorAll('.timeline-chip');
+    const timelinePanels = document.querySelectorAll('.timeline-panel');
+
+    timelineChips.forEach(chip => {
+        chip.addEventListener('click', () => {
+            const targetId = chip.getAttribute('data-target');
+            const targetPanel = document.getElementById(targetId);
+
+            if (!targetPanel) return;
+
+            timelineChips.forEach(btn => {
+                btn.classList.remove('active');
+                btn.setAttribute('aria-selected', 'false');
+            });
+
+            timelinePanels.forEach(panel => panel.classList.remove('active'));
+
+            chip.classList.add('active');
+            chip.setAttribute('aria-selected', 'true');
+            if (targetPanel) {
+                targetPanel.classList.add('active');
+            }
+        });
+    });
+
+});
+function setLang(lang) {
+    localStorage.setItem('site_lang', lang);
+
+    const current = window.location.pathname;
+    const isStudyPage = current.includes('study');
+
+    const jobMap = {
+        zh: '/index.html',
+        en: '/index_en.html',
+        ja: '/index_jp.html',
+    };
+
+    const studyMap = {
+        zh: '/study.html',
+        en: '/study_en.html',
+        ja: '/study_jp.html',
+    };
+
+    const target = isStudyPage ? studyMap[lang] : jobMap[lang];
+    if (target) {
+        window.location.href = target;
+    }
 }
 
 // 刷新页面时保持选中语言高亮
-document.addEventListener("DOMContentLoaded", () => {
-    const saved = localStorage.getItem("site_lang");
-    if (saved) {
-        const item = document.querySelector(`.dropdown-item[onclick="setLang('${saved}')"]`);
-        if (item) item.classList.add("active-lang");
+document.addEventListener('DOMContentLoaded', () => {
+    const saved = localStorage.getItem('site_lang');
+    if (!saved) return;
+    const langItem = document.querySelector(`.dropdown-item[data-lang="${saved}"]`);
+    if (langItem) {
+        langItem.classList.add('active-lang');
     }
-});
-function setLang(lang) {
-  // 存储用户选择（可以用 localStorage）
-  localStorage.setItem('site_lang', lang);
-
-  // 示例：你可以根据语言重新加载页面或替换内容
-  // 如果你是单页替换内容的话，这里写对应逻辑。
-  console.log('语言选择：', lang);
-
-  // 以下是示例：选择后刷新（假设你有 index_zh.html, index_en.html）
-  if (lang === 'zh') {
-    window.location.href = '/index_zh.html';
-  } else if (lang === 'en') {
-    window.location.href = '/index_en.html';
-  } else if (lang === 'ja') {
-    window.location.href = '/index_ja.html';
-  }
-}
-
-// 页面加载时，设置高亮或做其他逻辑
-document.addEventListener('DOMContentLoaded', function() {
-  const saved = localStorage.getItem('site_lang');
-  if (saved) {
-    // 可以根据保存的语言做标记
-    // 例如给对应的 .dropdown-item 加上 class
-  }
 });
