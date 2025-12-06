@@ -89,6 +89,8 @@ window.addEventListener('DOMContentLoaded', event => {
             const targetId = chip.getAttribute('data-target');
             const targetPanel = document.getElementById(targetId);
 
+            if (!targetPanel) return;
+
             timelineChips.forEach(btn => {
                 btn.classList.remove('active');
                 btn.setAttribute('aria-selected', 'false');

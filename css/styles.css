@@ -11599,6 +11599,7 @@ header.masthead h1, header.masthead .h1 {
   border-radius: 999px;
   font-weight: 700;
   letter-spacing: 0.02em;
+  cursor: pointer;
   transition: all 0.2s ease;
 }
 
