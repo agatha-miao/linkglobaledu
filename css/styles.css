@@ -12494,6 +12494,28 @@ header.masthead h1, header.masthead .h1 {
   z-index: 1;
 }
 
+.campus-partner h2 {
+  font-weight: 800;
+  letter-spacing: 0.01em;
+}
+
+.campus-partner .btn {
+  border-radius: 12px;
+  padding-inline: 20px;
+  font-weight: 700;
+  box-shadow: 0 16px 40px rgba(4, 10, 24, 0.28);
+}
+
+.campus-partner .btn-outline-light {
+  color: #f8f9fb;
+  border-color: rgba(255, 255, 255, 0.4);
+}
+
+.campus-partner .btn-outline-light:hover {
+  background: rgba(255, 255, 255, 0.12);
+  color: #fff;
+}
+
 .partner-eyebrow {
   letter-spacing: 0.12em;
   text-transform: uppercase;
@@ -12608,8 +12630,17 @@ header.masthead h1, header.masthead .h1 {
 }
 
 @media (max-width: 992px) {
+  .campus-partner .col-lg-7,
+  .campus-partner .col-lg-5 {
+    text-align: center;
+  }
+
+  .partner-chip-row {
+    justify-content: center;
+  }
+
   .partner-card {
-    margin-top: 10px;
+    margin-top: 20px;
   }
 }
 
