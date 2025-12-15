@@ -11052,6 +11052,7 @@ header.masthead h1, header.masthead .h1 {
   border-top: 1px solid rgba(255, 255, 255, 0.05);
   border-bottom: 1px solid rgba(255, 255, 255, 0.05);
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.04), 0 30px 60px rgba(6, 16, 31, 0.45);
+  isolation: isolate;
 }
 
 .premium-cta::before {
@@ -11077,6 +11078,7 @@ header.masthead h1, header.masthead .h1 {
   font-weight: 700;
   color: #cce1ff;
   background: rgba(255, 255, 255, 0.06);
+  box-shadow: 0 16px 30px rgba(0, 0, 0, 0.2);
 }
 
 .cta-title {
@@ -11090,6 +11092,7 @@ header.masthead h1, header.masthead .h1 {
   font-size: 1.05rem;
   line-height: 1.7;
   max-width: 620px;
+  margin-top: 16px;
 }
 
 .cta-badges {
@@ -11138,6 +11141,18 @@ header.masthead h1, header.masthead .h1 {
   border: 1px solid rgba(255, 255, 255, 0.6);
   backdrop-filter: blur(8px);
   color: #0c1624;
+  position: relative;
+  overflow: hidden;
+}
+
+.cta-panel::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  background: radial-gradient(circle at 20% 20%, rgba(244, 98, 58, 0.12), transparent 40%),
+    radial-gradient(circle at 80% 10%, rgba(35, 118, 255, 0.12), transparent 42%);
+  pointer-events: none;
 }
 
 .cta-panel-header {
@@ -11217,11 +11232,15 @@ header.masthead h1, header.masthead .h1 {
     margin-left: auto;
     margin-right: auto;
   }
+  .cta-badges {
+    justify-content: center;
+  }
   .cta-actions {
     justify-content: center;
   }
   .cta-panel {
     margin: 0 auto;
+    max-width: 520px;
   }
 }
 
@@ -11232,6 +11251,11 @@ header.masthead h1, header.masthead .h1 {
   .cta-compact {
     padding: 3.5rem 0;
   }
+  .cta-panel-list li {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
+  }
 }
 
 @media (max-width: 575.98px) {
@@ -11240,6 +11264,13 @@ header.masthead h1, header.masthead .h1 {
   }
   .mentor-photo {
     height: 200px;
+  }
+  .cta-actions {
+    width: 100%;
+  }
+  .cta-actions .btn {
+    flex: 1 1 100%;
+    justify-content: center;
   }
 }
 
