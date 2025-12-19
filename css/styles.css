@@ -12384,6 +12384,140 @@ header.masthead h1, header.masthead .h1 {
   z-index: 1;
 }
 
+.offers-banner {
+  position: relative;
+  background: linear-gradient(135deg, #0b1429, #0e213f);
+  color: #f8fafc;
+  padding: 120px 0 80px;
+  overflow: hidden;
+}
+
+.offers-banner::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at 12% 18%, rgba(255, 255, 255, 0.12), transparent 38%), radial-gradient(circle at 82% 12%, rgba(255, 255, 255, 0.1), transparent 36%), linear-gradient(115deg, rgba(57, 115, 255, 0.1), rgba(244, 98, 58, 0.18));
+}
+
+.offers-banner .container {
+  position: relative;
+  z-index: 1;
+}
+
+.banner-top .tiny-label {
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-weight: 800;
+  font-size: 0.8rem;
+  color: rgba(255, 255, 255, 0.72);
+}
+
+.breadcrumb-dot {
+  color: rgba(255, 255, 255, 0.55);
+  font-weight: 700;
+}
+
+.banner-card {
+  border-radius: 28px;
+  padding: 36px 32px;
+  background: rgba(8, 16, 36, 0.7);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 30px 80px rgba(0, 0, 0, 0.4);
+}
+
+.banner-card .row {
+  --bs-gutter-x: 1.5rem;
+}
+
+.banner-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 9px 16px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-weight: 800;
+  color: #e2e8f0;
+}
+
+.banner-chip i {
+  background: rgba(255, 255, 255, 0.12);
+  border-radius: 50%;
+  padding: 7px;
+}
+
+.banner-title {
+  font-size: clamp(2.2rem, 3vw + 1rem, 3.2rem);
+  margin: 16px 0 10px;
+}
+
+.banner-subtitle {
+  color: rgba(226, 232, 240, 0.86);
+  font-size: 1.05rem;
+  margin-bottom: 20px;
+}
+
+.banner-meta {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 12px;
+  margin-bottom: 14px;
+}
+
+.banner-meta .meta-item {
+  padding: 12px 14px;
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.banner-meta span {
+  display: block;
+  font-size: 0.85rem;
+  color: rgba(226, 232, 240, 0.68);
+  margin-bottom: 4px;
+}
+
+.banner-meta strong {
+  font-size: 1rem;
+  color: #fff;
+}
+
+.banner-cta {
+  gap: 10px;
+}
+
+.banner-actions .btn,
+.banner-cta .btn {
+  min-width: 150px;
+}
+
+.banner-summary {
+  padding: 22px;
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  color: #e2e8f0;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.05);
+}
+
+.summary-eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-weight: 800;
+  color: rgba(255, 255, 255, 0.72);
+  margin-bottom: 10px;
+}
+
+.summary-foot {
+  font-size: 0.95rem;
+  color: rgba(226, 232, 240, 0.8);
+}
+
 .footer-meta {
   display: flex;
   flex-direction: column;
@@ -12950,6 +13084,24 @@ header.masthead h1, header.masthead .h1 {
 }
 
 @media (max-width: 768px) {
+  .offers-banner {
+    padding: 90px 0 60px;
+  }
+
+  .banner-card {
+    padding: 26px 22px;
+  }
+
+  .banner-actions,
+  .banner-cta {
+    width: 100%;
+  }
+
+  .banner-actions .btn,
+  .banner-cta .btn {
+    width: 100%;
+  }
+
   .global-hero {
     padding: 120px 0 80px;
   }
